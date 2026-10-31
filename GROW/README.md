@@ -27,13 +27,10 @@ These are descriptive results from the sample file, not causal conclusions or cl
 ![GROW dashboard preview](charts/GROW_Dashboard_Preview.svg)
 
 ## Visuals and project files
-- `charts/` — bar chart for category sales, pie chart for category sales mix, regional profit bar chart, sub-category profit bar chart, monthly sales/profit line chart, and dashboard preview.
-- `GROW_Analytics_Workbook.xlsx` — raw data, quality audit, KPI summary, analysis tables, and an Excel chart gallery.
-- `samplesuperstore.csv` — source sample dataset.
-- `grow_analysis.py` — reproducible Python analysis.
-- `grow_analysis.sql` — SQLite-compatible business queries.
-- `PowerBI_DAX_Measures.txt` — DAX measures and suggested Power BI layout.
-- `Project_Report.pdf` and `GROW_Project_Report.pdf` — supplied project reports.
+- `charts/GROW_Dashboard_Preview.svg` — static dashboard overview shown in this repository.
+- The downloadable project pack contains the updated Excel workbook with a chart-gallery sheet, five exported chart images, the source sample dataset, Python analysis, SQL queries, Power BI DAX measures, and the supplied PDF reports.
+
+The repository preview is a static visual. The full set of chart images and the Excel workbook are included in the downloadable project pack, not embedded as individual files in this GitHub folder.
 
 ## Power BI report plan
 Import the `Analysis_Data` sheet into Power BI Desktop. Add KPI cards for sales, profit, margin, order count, and customer count; a monthly line chart; category sales and sub-category profit bar charts; and regional profit comparison. Add slicers for order date, region, category, segment, and ship mode. Use a proper Date table for time intelligence.
