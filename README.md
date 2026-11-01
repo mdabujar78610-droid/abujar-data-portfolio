@@ -37,3 +37,12 @@ To begin my career as a Junior Data Analyst and use data, AI, and automation to 
 
 ---
 *This portfolio is a work in progress. Project results are described only where they have been checked against the supplied files.*
+
+
+## Featured Projects
+
+### [GROW — Retail Sales & Profitability Analysis](GROW/README.md)
+Excel, SQL, Python, and Power BI preparation. Includes KPI analysis and five separate chart visuals in [GROW/charts](GROW/charts/).
+
+### [Users Data Report](Users-Data-Report/README.md)
+Python and Google AI Studio workflow for cleaning unstructured user data, producing KPIs and charts, and explaining findings with AI-assisted Q&A. The repository currently contains the project documentation; source code and sample artifacts are still to be added.
