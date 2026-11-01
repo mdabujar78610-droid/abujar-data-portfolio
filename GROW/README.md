@@ -23,21 +23,28 @@ GROW is a simulated retail-business case study built with the supplied Sample Su
 
 These are descriptive results from the sample file, not causal conclusions or claims about an actual company.
 
+## Tools and reproducible Python analysis
+- Excel: KPI summary, data checks, analysis tables, and chart gallery in the workbook.
+- SQL: reusable analysis queries in the project pack.
+- Python: Pandas data-quality checks, KPI calculations, category/region summaries, and Matplotlib chart generation.
+- Power BI: DAX measures and a recommended interactive report layout; the interactive report file is a separate next step.
+
+### Run the Python script
+From the repository root, install the dependencies and run:
+
+```bash
+pip install pandas matplotlib
+python GROW/grow_analysis.py GROW/dataset/samplesuperstore.csv
+```
+
+The script prints data-quality checks and business KPIs, then saves:
+- `grow_monthly_trend.png`
+- `grow_category_profit.png`
+
 ## Dashboard preview
 ![GROW dashboard preview](charts/GROW_Dashboard_Preview.svg)
 
-## Visuals and project files
-- `charts/GROW_Dashboard_Preview.svg` — static dashboard overview shown in this repository.
-- The downloadable project pack contains the updated Excel workbook with a chart-gallery sheet, five exported chart images, the source sample dataset, Python analysis, SQL queries, Power BI DAX measures, and the supplied PDF reports.
-
-The repository preview is a static visual. The full set of chart images and the Excel workbook are included in the downloadable project pack, not embedded as individual files in this GitHub folder.
-
-
-
 ## Individual chart visuals
-
-The charts below are generated from the included sample dataset and are available as separate SVG files:
-
 - [Sales by Category — Bar Chart](charts/01_sales_by_category_bar.svg)
 - [Sales Mix by Category — Pie Chart](charts/02_sales_mix_pie.svg)
 - [Monthly Sales & Profit — Line Chart](charts/03_monthly_sales_profit_line.svg)
@@ -47,8 +54,7 @@ The charts below are generated from the included sample dataset and are availabl
 ## Power BI report plan
 Import the `Analysis_Data` sheet into Power BI Desktop. Add KPI cards for sales, profit, margin, order count, and customer count; a monthly line chart; category sales and sub-category profit bar charts; and regional profit comparison. Add slicers for order date, region, category, segment, and ship mode. Use a proper Date table for time intelligence.
 
-
 ## Power BI implementation files
 - [DAX measures and dashboard model setup](powerbi/GROW_DAX_Measures.dax)
 
-The DAX file provides KPI measures and a recommended model layout. The interactive `.pbix` report itself has not yet been created or tested in Power BI Desktop.
+The DAX file provides KPI measures and a recommended model layout. The interactive Power BI report itself has not yet been created or tested in Power BI Desktop.
