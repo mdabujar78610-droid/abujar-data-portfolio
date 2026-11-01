@@ -1,0 +1,46 @@
+-- Load the Analysis_Data sheet from GROW_Analytics_Workbook.xlsx.
+-- Rename the imported table to Analysis_Data.
+
+Total Sales = SUM(Analysis_Data[Sales])
+
+Total Profit = SUM(Analysis_Data[Profit])
+
+Profit Margin % = DIVIDE([Total Profit], [Total Sales], 0)
+
+Order Count = DISTINCTCOUNT(Analysis_Data[Order ID])
+
+Customer Count = DISTINCTCOUNT(Analysis_Data[Customer ID])
+
+Average Discount = AVERAGE(Analysis_Data[Discount])
+
+Loss-Making Rows =
+CALCULATE(
+    COUNTROWS(Analysis_Data),
+    Analysis_Data[Profit] < 0
+)
+
+Sales Previous Month =
+CALCULATE(
+    [Total Sales],
+    DATEADD('Date'[Date], -1, MONTH)
+)
+
+Sales MoM Change % =
+DIVIDE(
+    [Total Sales] - [Sales Previous Month],
+    [Sales Previous Month],
+    0
+)
+
+-- MODEL SETUP
+-- 1. Set Order Date and Ship Date to Date type.
+-- 2. Create a continuous Date table and mark it as the Date table.
+-- 3. Create relationship Date[Date] -> Analysis_Data[Order Date].
+-- 4. Use Date fields in time-intelligence visuals.
+-- 5. Format Profit Margin % and Average Discount as percentages.
+
+-- DASHBOARD VISUALS
+-- KPI cards: Total Sales, Total Profit, Profit Margin %, Order Count, Customer Count.
+-- Line chart: Date/Month vs Total Sales and Total Profit.
+-- Bar charts: Category vs Sales; Sub-Category vs Profit; Region vs Profit.
+-- Slicers: Order Date, Region, Category, Segment, Ship Mode.
