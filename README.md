@@ -25,7 +25,7 @@ A simulated retail analytics case study using the supplied Sample Superstore dat
 A learning project exploring how messy input data can be cleaned, organized, analyzed, and presented through reports, KPIs, charts, and question-based insights.
 - Tools explored: Python and Google AI Studio
 - [Project documentation](./Users-Data-Report/README.md)
-- Status: documentation published; original source code, sample inputs/outputs, and genuine screenshots are still to be added and verified.
+- Status: a recreated local Python starter script and setup instructions are now included. The original AI Studio application and original dataset have not been recovered or verified.
 
 ## Education
 **B.Sc. Chemistry** — Lalit Narayan Mithila University (LNMU), currently pursuing
