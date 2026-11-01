@@ -46,3 +46,9 @@ The charts below are generated from the included sample dataset and are availabl
 
 ## Power BI report plan
 Import the `Analysis_Data` sheet into Power BI Desktop. Add KPI cards for sales, profit, margin, order count, and customer count; a monthly line chart; category sales and sub-category profit bar charts; and regional profit comparison. Add slicers for order date, region, category, segment, and ship mode. Use a proper Date table for time intelligence.
+
+
+## Power BI implementation files
+- [DAX measures and dashboard model setup](powerbi/GROW_DAX_Measures.dax)
+
+The DAX file provides KPI measures and a recommended model layout. The interactive `.pbix` report itself has not yet been created or tested in Power BI Desktop.
