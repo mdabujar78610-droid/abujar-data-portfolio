@@ -1,6 +1,6 @@
 # GROW — Retail Sales & Profitability Analysis
 
-**Junior Data Analyst portfolio project | Excel • SQL • Python • Power BI**
+**Junior Data Analyst portfolio project | Excel • SQL • Python • Tableau**
 
 ## Project overview
 GROW is a simulated retail-business case study built with the supplied Sample Superstore dataset. It explores sales, profit, category and regional performance, sub-category profitability, discount patterns, and data quality.
@@ -27,7 +27,7 @@ These are descriptive results from the sample file, not causal conclusions or cl
 - Excel: KPI summary, data checks, analysis tables, and chart gallery in the workbook.
 - SQL: reusable analysis queries in the project pack.
 - Python: Pandas data-quality checks, KPI calculations, category/region summaries, and Matplotlib chart generation.
-- Power BI: DAX measures and a recommended interactive report layout; the interactive report file is a separate next step.
+- Tableau: interactive dashboard built by the project owner; the packaged Tableau workbook and supporting files will be added after they are provided.
 
 ### Run the Python script
 From the repository root, install the dependencies and run:
@@ -51,10 +51,7 @@ The script prints data-quality checks and business KPIs, then saves:
 - [Profit by Region — Bar Chart](charts/04_profit_by_region_bar.svg)
 - [Profit by Sub-category — Bar Chart](charts/05_profit_by_subcategory_bar.svg)
 
-## Power BI report plan
-Import the `Analysis_Data` sheet into Power BI Desktop. Add KPI cards for sales, profit, margin, order count, and customer count; a monthly line chart; category sales and sub-category profit bar charts; and regional profit comparison. Add slicers for order date, region, category, segment, and ship mode. Use a proper Date table for time intelligence.
+## Tableau dashboard
+The project dashboard was created in Tableau. The Tableau workbook (`.twb` or `.twbx`) and any supporting packaged assets will be added to this folder once supplied, so recruiters can inspect or download the actual Tableau work. The dashboard includes KPI cards, sales and profit trends, category and regional analysis, sub-category profitability, and interactive filters as implemented in the workbook.
 
-## Power BI implementation files
-- [DAX measures and dashboard model setup](powerbi/GROW_DAX_Measures.dax)
-
-The DAX file provides KPI measures and a recommended model layout. The interactive Power BI report itself has not yet been created or tested in Power BI Desktop.
+> **Portfolio accuracy:** The Tableau workbook file has not yet been uploaded to this repository. It will be added after it is provided and reviewed.
