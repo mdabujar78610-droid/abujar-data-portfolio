@@ -11,13 +11,12 @@ Welcome to my data analytics portfolio. I am learning to turn raw data into clea
 - **Excel:** data cleaning, formulas, PivotTables, and charts
 - **SQL:** querying structured data
 - **Python:** data preparation and analysis
-- **Power BI:** dashboard planning and data visualization
 
 ## Projects
 
 ### GROW — Retail Sales & Profitability Analysis
 A simulated retail analytics case study using the supplied Sample Superstore dataset. Includes data-quality checks, KPI analysis, category and regional comparisons, and static chart visuals.
-- Tools: Excel, SQL, Python, Power BI (DAX measures and dashboard plan)
+- Tools: Excel, SQL, Python, and Tableau
 - [Project documentation](./GROW/README.md)
 - [Dashboard preview](./GROW/charts/GROW_Dashboard_Preview.svg)
 
@@ -43,7 +42,7 @@ To begin my career as a Junior Data Analyst and use data, AI, and automation to 
 ## Featured Projects
 
 ### [GROW — Retail Sales & Profitability Analysis](GROW/README.md)
-Excel, SQL, Python, and Power BI preparation. Includes KPI analysis and five separate chart visuals in [GROW/charts](GROW/charts/).
+Excel, SQL, Python, and Tableau analysis. Includes KPI analysis and five separate chart visuals in [GROW/charts](GROW/charts/).
 
 ### [Users Data Report](Users-Data-Report/README.md)
 Python and Google AI Studio workflow for cleaning unstructured user data, producing KPIs and charts, and explaining findings with AI-assisted Q&A. The repository currently contains the project documentation; source code and sample artifacts are still to be added.
