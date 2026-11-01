@@ -1,34 +1,43 @@
 # Users Data Report
 
-**Portfolio project | Python, Pandas, Google AI Studio, Excel-style reporting**
+**Portfolio project | Python, Pandas, Google AI Studio (AI-assisted exploration)**
 
 ## Overview
-Users Data Report is an AI-assisted data-cleaning and reporting workflow. It is designed to take unclean or unstructured user data, convert it into a structured format, analyze the cleaned records, and present findings through KPIs, charts, pivot-style summaries, and natural-language explanations.
+This project explores a workflow for converting unclean or unstructured user-provided data into a structured dataset, then presenting data-quality checks, summary KPIs, charts, and explanations.
 
-## Workflow
-1. Upload a supported source file.
-2. Inspect columns, data types, missing values, duplicates, and inconsistent formats.
-3. Clean and standardize the records while preserving the original source.
-4. Create a structured output suitable for analysis.
-5. Calculate summary KPIs and build visualizations.
-6. Ask questions about missing data, store performance, and customer ratings; use the AI assistant to explain results grounded in the processed data.
+## Repository contents
+- `src/users_data_report.py` — recreated, reusable local analysis script for CSV and Excel files.
+- `requirements.txt` — Python dependencies.
+- `outputs/` — generated locally when the script is run; not committed by default.
 
-## Planned deliverables
-- data/ — a small, non-sensitive sample dataset (add only data you have permission to share).
-- notebooks/ — cleaning and exploratory analysis notebook.
-- src/ — reusable Python cleaning and reporting code.
-- outputs/ — cleaned sample, KPI summary, and chart images.
-- screenshots/ — genuine screenshots of the working application.
-- README.md — setup, workflow, sample results, and limitations.
+**Transparency:** The original project source code and original working dataset were not available during this repository update. The script in `src/` is a newly recreated starter based on the documented project workflow; it is not represented as the recovered original application. It performs local cleaning and exploratory summaries. A Google AI Studio integration, interactive upload interface, and AI question-answering feature are not included in this script.
 
-## Important status note
-This repository currently documents the project workflow. The original Users Data Report source code, sample input/output files, and genuine application screenshots have not yet been added or independently verified. Add those artifacts before presenting this as a fully reproducible implementation. Do not upload private customer or personal data.
+## Run locally
+1. Install Python 3.10 or newer.
+2. From this folder, install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run on your own CSV or Excel file:
+   ```bash
+   python src/users_data_report.py path/to/your_file.csv
+   ```
+   For Excel, replace the input with `path/to/your_file.xlsx`.
+4. Open the generated `outputs/` folder.
 
-## Reproducibility
-When source code is added, include exact installation instructions, a requirements.txt, sample input data, and commands to reproduce the cleaned dataset, KPIs, and charts. Record the Google AI Studio model and prompt configuration used, without publishing API keys.
+## Outputs
+- `cleaned_data.csv` — blank rows and exact duplicate rows removed; surrounding text whitespace trimmed.
+- `kpi_summary.csv` — row/column counts, duplicates removed, missing cells, and field counts.
+- `missing_values.csv` — missing count and percentage by column.
+- `numeric_summary.csv` — descriptive statistics for numeric fields, when present.
+- `charts/` — histograms for numeric fields and top-value bar charts for categorical fields.
 
-## Responsible analysis
-- Never expose personal or confidential user information.
-- Report missingness and data-quality issues rather than silently hiding them.
-- Distinguish measured results from AI-generated explanations.
-- Verify AI answers against the processed dataset before using them in decisions.
+## Important limitations
+- Cleaning is intentionally conservative. It does not guess missing values, remove outliers, or infer business-specific rules.
+- Review dates, IDs, currency, ratings, and category labels manually.
+- Do not upload private, personal, or confidential data to GitHub.
+- AI-generated explanations must be checked against the underlying data before use.
+- The script does not create an interactive dashboard or connect to Google AI Studio.
+
+## Next development steps
+Add a permitted sample dataset, a notebook with project-specific analysis, verified screenshots of the original AI Studio workflow, and an optional AI Q&A layer with API keys stored outside source control.
