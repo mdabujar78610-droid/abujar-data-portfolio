@@ -24,7 +24,8 @@ A simulated retail analytics case study using the supplied Sample Superstore dat
 ### Users Data Report — Data Cleaning and Analysis
 A learning project exploring how messy input data can be cleaned, organized, analyzed, and presented through reports, KPIs, charts, and question-based insights.
 - Tools explored: Python and Google AI Studio
-- Documentation and project files will be added as they are organized.
+- [Project documentation](./Users-Data-Report/README.md)
+- Status: documentation published; original source code, sample inputs/outputs, and genuine screenshots are still to be added and verified.
 
 ## Education
 **B.Sc. Chemistry** — Lalit Narayan Mithila University (LNMU), currently pursuing
