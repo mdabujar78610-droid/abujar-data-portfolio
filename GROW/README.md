@@ -32,15 +32,17 @@ These are descriptive results from the sample file, not causal conclusions or cl
 
 The repository preview is a static visual. The full set of chart images and the Excel workbook are included in the downloadable project pack, not embedded as individual files in this GitHub folder.
 
+
+
+## Individual chart visuals
+
+The charts below are generated from the included sample dataset and are available as separate SVG files:
+
+- [Sales by Category — Bar Chart](charts/01_sales_by_category_bar.svg)
+- [Sales Mix by Category — Pie Chart](charts/02_sales_mix_pie.svg)
+- [Monthly Sales & Profit — Line Chart](charts/03_monthly_sales_profit_line.svg)
+- [Profit by Region — Bar Chart](charts/04_profit_by_region_bar.svg)
+- [Profit by Sub-category — Bar Chart](charts/05_profit_by_subcategory_bar.svg)
+
 ## Power BI report plan
 Import the `Analysis_Data` sheet into Power BI Desktop. Add KPI cards for sales, profit, margin, order count, and customer count; a monthly line chart; category sales and sub-category profit bar charts; and regional profit comparison. Add slicers for order date, region, category, segment, and ship mode. Use a proper Date table for time intelligence.
-
-**Important:** The images are static portfolio charts generated from the workbook data. They are not screenshots of an interactive Power BI `.pbix` report.
-
-## Analyst cautions
-- Confirm the unusual future-dated portion of the sample before final presentation.
-- Negative-profit rows are not automatically data errors.
-- Discount-profit association is descriptive and does not prove discounts caused losses.
-- Currency formatting follows the dollar values in the supplied sample file.
-
-**Status:** Analysis and static chart pack prepared; interactive Power BI report can be built separately in Power BI Desktop.
