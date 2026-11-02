@@ -53,6 +53,24 @@ These are descriptive results from the supplied sample file. They do not establi
 - **Python:** Pandas-based data-quality checks, KPI calculations, and category/region summaries.
 - **Tableau:** one interactive dashboard, 12 worksheets, and 3 highlight actions.
 
+### Tableau Worksheet Inventory
+The Tableau workbook contains these 12 worksheets:
+
+1. KPI - Total Profit
+2. KPI - Total Sales
+3. KPI - Profit Margin
+4. KPI - Orders
+5. KPI - Negative Profit
+6. Monthly Sales and Profit Trend
+7. Sales by Category
+8. Profit by Region
+9. Profit by Sub-Category
+10. Sub-Category Highlight A
+11. Sub-Category Highlight B
+12. Regional Profit Highlight
+
+The five KPI worksheets support the dashboard's headline metrics. The remaining worksheets provide time-trend, category, regional, sub-category, and highlight views. These are Tableau **worksheets**, not 12 separate automated workflows.
+
 ## 7. Project Structure
 ```text
 GROW/
