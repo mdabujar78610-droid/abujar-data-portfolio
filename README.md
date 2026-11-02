@@ -1,42 +1,51 @@
 # Mohammad Abuzar | Data Analytics Portfolio
 
-Welcome to my data analytics portfolio. I am learning to turn raw data into clear, useful business insights through data cleaning, analysis, and visualization.
+Welcome to my portfolio. I am an aspiring Junior Data Analyst building practical projects that demonstrate data preparation, analysis, visualization, and communication of business insights.
 
 ## About Me
 - B.Sc. Chemistry student at Lalit Narayan Mithila University (LNMU)
 - Aspiring Junior Data Analyst
-- Interested in Excel, SQL, Python, Tableau, and Generative AI (GenAI)
+- Interested in data analytics, business intelligence, and AI-assisted workflows
 
-## Skills
-- **Excel:** data cleaning, formulas, PivotTables, KPI summaries, and charts
-- **SQL:** analytical queries, aggregations, and data-quality checks
-- **Python:** Pandas-based data preparation, analysis, and visualization
-- **Tableau:** dashboards, worksheets, and interactive highlight actions
-- **GenAI:** prompt engineering and AI-assisted data analysis
+## Technical Skills
+| Area | Skills |
+|---|---|
+| Excel | Data cleaning, formulas, PivotTables, KPI summaries, charts |
+| SQL | Filtering, joins, aggregations, analytical queries, data-quality checks |
+| Python | Pandas, data preparation, exploratory analysis, repeatable scripts |
+| Tableau | Worksheets, dashboards, KPI views, interactive highlight actions |
+| Generative AI | Prompt engineering and AI-assisted analysis |
 
-## Projects
+## Featured Projects
 
-### GROW — Retail Sales & Profitability Analysis
-A simulated retail analytics case study using the Sample Superstore dataset. Includes data-quality checks, KPI analysis, SQL examples, a reusable Python script, an Excel analysis workbook, and a Tableau dashboard.
-- [Project overview and verified findings](GROW/README.md)
+### 1. GROW — Retail Sales & Profitability Analysis
+A simulated retail analytics case study using the Sample Superstore dataset. The project includes an Excel analysis workbook, SQL examples, a Python analysis script, a Tableau workbook, chart exports, and a dashboard preview.
+
+- [Project overview, methodology, and findings](GROW/README.md)
 - [Tableau workbook](GROW/tableau/GROW_Tableau_Dashboard.twb)
+- [Dashboard preview](GROW/dashboard/grow_dashboard.png)
+- [Chart gallery](GROW/charts/)
 - [Source dataset](GROW/dataset/samplesuperstore.csv)
 - [Excel analysis workbook](GROW/GROW_Analytics_Workbook.xlsx)
-- [Project source pack ZIP](GROW/GROW_Resume_Project_Pack.zip)
+- [Project source pack](GROW/GROW_Resume_Project_Pack.zip)
 
-### Users Data Report — Data Cleaning and Analysis
-A learning project exploring a workflow for cleaning unstructured user data, producing summary KPIs and charts, and explaining findings. The repository contains a recreated local Python starter; it does not claim to include the original Google AI Studio application.
+### 2. Users Data Report — Data Cleaning & Analysis
+A learning project exploring a workflow for cleaning unstructured user data, producing summary KPIs and charts, and explaining findings.
+
 - [Project documentation](Users-Data-Report/README.md)
 - [Python starter script](Users-Data-Report/src/users_data_report.py)
 
 ## Education
-**B.Sc. Chemistry** — Lalit Narayan Mithila University (LNMU), currently pursuing
+**B.Sc. Chemistry** — Lalit Narayan Mithila University (LNMU), currently pursuing.
 
 ## Certification
-**AI Data Science** — IIT Roorkee iHUB collaboration (course completed; update certificate details when the certificate is issued).
+**AI Data Science** — IIT Roorkee iHUB collaboration (course completed).
 
-## Career Goal
-To begin my career as a Junior Data Analyst and use data, AI, and automation to help solve real-world business problems.
+## Career Objective
+To begin my career as a Junior Data Analyst and use data, AI, and automation to help solve practical business problems.
+
+## Important Note
+Portfolio projects use sample or learning data unless explicitly stated otherwise. GROW uses the Sample Superstore dataset; its results are descriptive findings from that dataset and are not verified performance figures from a real company.
 
 ---
-*Portfolio projects use sample or learning data unless explicitly stated otherwise. Findings are descriptive and should not be presented as verified results from a real company.*
+*Thank you for visiting my portfolio.*
