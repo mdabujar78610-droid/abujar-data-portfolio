@@ -3,9 +3,9 @@
 **Junior Data Analyst portfolio project | Excel • SQL • Python • Tableau**
 
 ## Project overview
-GROW is a simulated retail-business case study built with the Sample Superstore dataset. The project explores sales, profit, category and regional performance, sub-category profitability, discount patterns, and data quality.
+GROW is a simulated retail analytics case study built with the Sample Superstore dataset. The project examines sales, profit, category and regional performance, sub-category profitability, discount patterns, and data quality.
 
-> **Dataset note:** This is sample data, not verified data from a real GROW company. The source dates run from 3 Jan 2023 through 30 Dec 2026, so validate the date range before presenting it as historical performance.
+> **Dataset note:** This is sample data, not verified data from a real GROW company. The source dates run from 3 Jan 2023 through 30 Dec 2026. Treat the findings as analysis of a supplied sample dataset, not as verified company history.
 
 ## Dataset and quality checks
 - 10,194 transaction rows and 21 columns
@@ -21,43 +21,50 @@ GROW is a simulated retail-business case study built with the Sample Superstore 
 - **Lowest sub-category profit:** Tables — -$17,753.21
 - **Lowest regional profit:** Central — $39,865.31
 
-These are descriptive results from the sample file, not causal conclusions or claims about an actual company.
+These are descriptive results from the sample file, not causal conclusions or claims about an actual company. Confirm currency formatting before presenting the Tableau views alongside these dollar-denominated sample KPIs.
 
 ## Tools and analysis
-- **Excel:** KPI summary, data checks, analysis tables, and chart gallery.
+- **Excel:** KPI summary, data checks, and analysis tables.
 - **SQL:** reusable queries for sales, profit, category, region, and sub-category analysis.
-- **Python:** Pandas data-quality checks, KPI calculations, category/region summaries, and Matplotlib chart generation.
-- **Tableau:** dashboard workbook with KPI views, monthly trend, category/region/sub-category analysis, and three highlight actions.
+- **Python:** Pandas data-quality checks, KPI calculations, and category/region summaries.
+- **Tableau:** the main dashboard workbook, with 12 worksheets and 3 interactive highlight actions.
+
+## Tableau dashboard
+The supplied Tableau workbook contains one dashboard and 12 worksheets. The worksheets cover:
+
+| Dashboard component | Worksheet |
+|---|---|
+| Total Profit KPI | KPI - Total Profit |
+| Total Sales KPI | KPI - Total Sales |
+| Profit Margin KPI | KPI - Profit Margin |
+| Orders KPI | KPI - Orders |
+| Negative Profit KPI | KPI - Negative Profit |
+| Monthly trend | Monthly Sales and Profit Trend |
+| Category analysis | Sales by Category |
+| Regional analysis | Profit by Region |
+| Sub-category analysis | Profit by Sub-Category |
+| Interactive highlight views | Sub-Category Highlight A, Sub-Category Highlight B, Regional Profit Highlight |
+
+The workbook also contains **3 interactive highlight actions**. The calculated fields include:
+- Profit Margin: `SUM([Profit]) / SUM([Sales])`
+- Orders: `COUNTD([Order ID])`
+- Negative Profit count: `SUM(IF [Profit] < 0 THEN 1 ELSE 0 END)`
+
+### Data connection
+The prepared workbook uses a relative `dataset` folder and expects `samplesuperstore.csv` there. Keep the workbook in the **GROW project root**, alongside the `dataset` folder. If Tableau asks for the source, connect it to `dataset/samplesuperstore.csv`.
+
+### Currency validation
+The Tableau workbook formats Sales and Profit with a rupee symbol (₹), while the sample KPI calculations above are written in US dollars ($). Confirm the intended currency and make the displays consistent before publishing or using dashboard screenshots.
+
+### Workbook availability
+The renamed Tableau workbook is prepared locally as `GROW_Tableau_Dashboard.twb`. It has not yet been uploaded to this GitHub repository. Upload that file to the GROW project root to make the actual interactive dashboard downloadable here.
 
 ## Run the Python analysis
 From the repository root:
 
 ```bash
-pip install pandas matplotlib
+pip install pandas
 python GROW/grow_analysis.py GROW/dataset/samplesuperstore.csv
 ```
 
-The script prints data-quality checks and business KPIs, then saves:
-- `grow_monthly_trend.png`
-- `grow_category_profit.png`
-
-## Dashboard preview and chart gallery
-![GROW dashboard preview](charts/GROW_Dashboard_Preview.svg)
-
-- [Sales by Category — Bar Chart](charts/01_sales_by_category_bar.svg)
-- [Sales Mix by Category — Pie Chart](charts/02_sales_mix_pie.svg)
-- [Monthly Sales & Profit — Line Chart](charts/03_monthly_sales_profit_line.svg)
-- [Profit by Region — Bar Chart](charts/04_profit_by_region_bar.svg)
-- [Profit by Sub-category — Bar Chart](charts/05_profit_by_subcategory_bar.svg)
-
-## Tableau workbook review
-The supplied Tableau workbook contains **1 dashboard, 12 worksheets, and 3 highlight actions**. Its calculated fields include:
-- Profit Margin: `SUM([Profit]) / SUM([Sales])`
-- Orders: `COUNTD([Order ID])`
-- Negative Profit count: `SUM(IF [Profit] < 0 THEN 1 ELSE 0 END)`
-
-**Data connection:** The original workbook referred to a local Windows folder. The adjusted copy uses a repository-relative `dataset` folder; keep the workbook inside `GROW/` beside that folder. If Tableau still prompts for the source, connect it to [`dataset/samplesuperstore.csv`](dataset/samplesuperstore.csv).
-
-**Currency review:** The workbook's Sales and Profit views use the ₹ symbol, while the supplied KPI summary above is expressed in US dollars. Confirm the intended currency and make the display consistent before publishing screenshots or presenting the figures.
-
-**Workbook file:** The Tableau workbook itself is not yet committed to this repository. Add `GROW_Tableau_Dashboard.twb` to this folder to make it available to visitors.
+The script prints data-quality checks, KPIs, category performance, and regional performance. Tableau is the project's dashboard and visualization tool; the previous standalone SVG chart gallery has been removed.
