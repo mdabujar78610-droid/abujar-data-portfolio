@@ -5,14 +5,14 @@ Welcome to my data analytics portfolio. I am learning to turn raw data into clea
 ## About Me
 - B.Sc. Chemistry student at Lalit Narayan Mithila University (LNMU)
 - Aspiring Junior Data Analyst
-- Interested in Excel, SQL, Python, Tableau, Power BI, and AI-assisted analysis
+- Interested in Excel, SQL, Python, Tableau, and Generative AI (GenAI)
 
 ## Skills
 - **Excel:** data cleaning, formulas, PivotTables, KPI summaries, and charts
 - **SQL:** analytical queries, aggregations, and data-quality checks
 - **Python:** Pandas-based data preparation, analysis, and visualization
 - **Tableau:** dashboards, worksheets, and interactive highlight actions
-- **Power BI:** DAX measures and dashboard design practice
+- **GenAI:** prompt engineering and AI-assisted data analysis
 
 ## Projects
 
