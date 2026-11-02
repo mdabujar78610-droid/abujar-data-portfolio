@@ -39,11 +39,31 @@ SELECT Discount, COUNT(*) AS line_items,
 FROM superstore
 GROUP BY Discount ORDER BY Discount;
 
--- 6. Monthly trend. Requires parseable Order Date values.
-SELECT strftime('%Y-%m', date("Order Date")) AS order_month,
-       ROUND(SUM(Sales),2) AS sales, ROUND(SUM(Profit),2) AS profit
-FROM superstore
-GROUP BY strftime('%Y-%m', date("Order Date"))
+-- 6. Monthly trend. The supplied CSV uses M/D/YYYY dates (for example, 1/3/2023).
+-- Convert those values to ISO dates before grouping so SQLite can parse them.
+WITH parsed_dates AS (
+  SELECT
+    printf(
+      '%04d-%02d-%02d',
+      CAST(substr("Order Date", -4) AS INTEGER),
+      CAST(substr("Order Date", 1, instr("Order Date", '/') - 1) AS INTEGER),
+      CAST(
+        substr(
+          "Order Date",
+          instr("Order Date", '/') + 1,
+          instr(substr("Order Date", instr("Order Date", '/') + 1), '/') - 1
+        ) AS INTEGER
+      )
+    ) AS iso_order_date,
+    Sales,
+    Profit
+  FROM superstore
+)
+SELECT strftime('%Y-%m', date(iso_order_date)) AS order_month,
+       ROUND(SUM(Sales), 2) AS sales,
+       ROUND(SUM(Profit), 2) AS profit
+FROM parsed_dates
+GROUP BY strftime('%Y-%m', date(iso_order_date))
 ORDER BY order_month;
 
 -- 7. Data-quality checks
