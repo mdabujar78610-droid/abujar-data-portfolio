@@ -3,68 +3,60 @@
 **Junior Data Analyst portfolio project | Excel • SQL • Python • Tableau**
 
 ## Project overview
-GROW is a simulated retail analytics case study built with the Sample Superstore dataset. The project examines sales, profit, category and regional performance, sub-category profitability, discount patterns, and data quality.
+GROW is a simulated retail analytics case study built with the Sample Superstore dataset. It examines sales, profit, category and regional performance, sub-category profitability, discount patterns, and data quality.
 
-> **Dataset note:** This is sample data, not verified data from a real GROW company. The source dates run from 3 Jan 2023 through 30 Dec 2026. Treat the findings as analysis of a supplied sample dataset, not as verified company history.
+> **Dataset note:** This is sample data, not verified data from a real GROW company. The source dates run from 3 Jan 2023 through 30 Dec 2026. Treat findings as analysis of the supplied sample dataset, not verified company history.
 
 ## Dataset and quality checks
 - 10,194 transaction rows and 21 columns
 - 5,111 distinct orders and 804 distinct customers
-- The supplied Python checks reported no missing cells, exact duplicate rows, duplicate Row IDs, or ship-before-order records
+- The supplied checks found no missing cells, exact duplicate rows, duplicate Row IDs, or ship-before-order records.
 
-## Key results from the supplied sample data
+## Key results from the sample data
 - **Total sales:** $2,326,534.35
 - **Total profit:** $292,296.81
 - **Profit margin:** 12.56%
+- **Unique orders:** 5,111
+- **Unique customers:** 804
 - **Negative-profit line items:** 1,901 (18.65%)
 - **Highest category sales:** Technology — $839,893.28
 - **Lowest sub-category profit:** Tables — -$17,753.21
 - **Lowest regional profit:** Central — $39,865.31
 
-These are descriptive results from the sample file, not causal conclusions or claims about an actual company. Confirm currency formatting before presenting the Tableau views alongside these dollar-denominated sample KPIs.
+These are descriptive results from the supplied sample file, not causal conclusions or claims about an actual company.
 
 ## Tools and analysis
-- **Excel:** KPI summary, data checks, and analysis tables.
-- **SQL:** reusable queries for sales, profit, category, region, and sub-category analysis.
-- **Python:** Pandas data-quality checks, KPI calculations, and category/region summaries.
-- **Tableau:** the main dashboard workbook, with 12 worksheets and 3 interactive highlight actions.
+- **Excel:** KPI summary, data-quality audit, category/region/monthly analysis, and analysis data table.
+- **SQL:** reusable queries for overall KPIs, category, region, sub-category, discount, monthly trends, and data-quality checks (included in the project ZIP).
+- **Python:** Pandas data-quality checks, KPI calculations, category/region summaries, and repeatable analysis.
+- **Tableau:** primary interactive dashboard workbook with 12 worksheets and 3 highlight actions.
+- **Power BI:** DAX measures and dashboard layout notes are included in the ZIP; a finished `.pbix` report is not currently in the repository.
 
 ## Tableau dashboard
-The supplied Tableau workbook contains one dashboard and 12 worksheets. The worksheets cover:
+The workbook is stored at [GROW_Tableau_Dashboard.twb](tableau/GROW_Tableau_Dashboard.twb). It contains one dashboard and 12 worksheets: five KPI views, monthly sales/profit trend, category sales, regional profit, sub-category profit, and three highlight views. It also contains 3 interactive highlight actions.
 
-| Dashboard component | Worksheet |
-|---|---|
-| Total Profit KPI | KPI - Total Profit |
-| Total Sales KPI | KPI - Total Sales |
-| Profit Margin KPI | KPI - Profit Margin |
-| Orders KPI | KPI - Orders |
-| Negative Profit KPI | KPI - Negative Profit |
-| Monthly trend | Monthly Sales and Profit Trend |
-| Category analysis | Sales by Category |
-| Regional analysis | Profit by Region |
-| Sub-category analysis | Profit by Sub-Category |
-| Interactive highlight views | Sub-Category Highlight A, Sub-Category Highlight B, Regional Profit Highlight |
+### Dataset connection
+The workbook's relative data connection points to `../dataset/samplesuperstore.csv`. Keep the existing `GROW/dataset` folder in place. If Tableau asks for the source, select `GROW/dataset/samplesuperstore.csv`.
 
-The workbook also contains **3 interactive highlight actions**. The calculated fields include:
-- Profit Margin: `SUM([Profit]) / SUM([Sales])`
-- Orders: `COUNTD([Order ID])`
-- Negative Profit count: `SUM(IF [Profit] < 0 THEN 1 ELSE 0 END)`
+### Currency and date validation
+The written KPI values above are expressed in US dollars to match the source project report. Before publishing screenshots, verify that Tableau's number formatting uses the intended currency. Also disclose the dataset's unusual 2023–2026 date range.
 
-### Data connection
-The uploaded workbook is stored at [`tableau/GROW_Tableau_Dashboard.twb`](tableau/GROW_Tableau_Dashboard.twb). Its relative data connection points to `../dataset/samplesuperstore.csv`. Keep the existing `dataset` folder in place. If Tableau asks for the source, select `GROW/dataset/samplesuperstore.csv`.
-
-### Currency validation
-The Tableau workbook formats Sales and Profit with a rupee symbol (₹), while the sample KPI calculations above are written in US dollars ($). Confirm the intended currency and make the displays consistent before publishing or using dashboard screenshots.
-
-### Workbook availability
-The renamed Tableau workbook is now uploaded to this repository: [`GROW_Tableau_Dashboard.twb`](tableau/GROW_Tableau_Dashboard.twb). Open it with Tableau Desktop to explore the interactive dashboard and worksheets.
+## Main project files
+- `GROW_Analytics_Workbook.xlsx` — Excel analysis workbook
+- `GROW_Resume_Project_Pack.zip` — source pack containing SQL, Python, Excel, reports, sample CSV, and Power BI DAX notes
+- `dataset/samplesuperstore.csv` — source sample data
+- `tableau/GROW_Tableau_Dashboard.twb` — Tableau workbook
+- `grow_analysis.py` — reproducible Python analysis script
 
 ## Run the Python analysis
 From the repository root:
-
 ```bash
 pip install pandas
 python GROW/grow_analysis.py GROW/dataset/samplesuperstore.csv
 ```
 
-The script prints data-quality checks, KPIs, category performance, and regional performance. Tableau is the project's dashboard and visualization tool; the previous standalone SVG chart gallery has been removed.
+## Limitations and next steps
+- The sample data is not verified real-company data.
+- Discount/profit association is descriptive and does not establish causation.
+- The ZIP contains an older report titled SmartMart; use the GROW report for this renamed project.
+- A finished Power BI `.pbix` file and verified dashboard screenshots are not currently present.
