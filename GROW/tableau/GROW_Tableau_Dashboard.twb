@@ -685,31 +685,31 @@
   <actions>
     <action caption='Highlight 1 (generated)' name='[Action1_4881D5D0C51D4F9984D9D61ECCE89F58]'>
       <activation auto-clear='true' type='on-select' />
-      <source type='sheet' worksheet='Sheet 7' />
+      <source type='sheet' worksheet='Sales by Category' />
       <command command='tsc:brush'>
         <param name='field-captions' value='Category' />
-        <param name='target' value='Sheet 7' />
+        <param name='target' value='Sales by Category' />
       </command>
     </action>
     <action caption='Highlight 2 (generated)' name='[Action2_171B883A5FD74BD0A3F8E997BEB6D8B6]'>
       <activation auto-clear='true' type='on-select' />
-      <source type='sheet' worksheet='Sheet 9' />
+      <source type='sheet' worksheet='Profit by Sub-Category' />
       <command command='tsc:brush'>
         <param name='field-captions' value='Sub-Category' />
-        <param name='target' value='Sheet 9' />
+        <param name='target' value='Profit by Sub-Category' />
       </command>
     </action>
     <action caption='Highlight 3 (generated)' name='[Action3_98E81ACF1276445A92AFF0DA06E4417E]'>
       <activation auto-clear='true' type='on-select' />
-      <source dashboard='Dashboard 1' type='sheet' />
+      <source dashboard='GROW - Retail Sales and Profitability Dashboard' type='sheet' />
       <command command='tsc:brush'>
         <param name='field-captions' value='Category' />
-        <param name='target' value='Dashboard 1' />
+        <param name='target' value='GROW - Retail Sales and Profitability Dashboard' />
       </command>
     </action>
   </actions>
   <worksheets>
-    <worksheet name='Sheet 1'>
+    <worksheet name='KPI - Total Profit'>
       <layout-options>
         <title>
           <formatted-text>
@@ -761,7 +761,7 @@
       </table>
       <simple-id uuid='{2F8F60D0-BB3F-4566-97A3-915F54D4C074}' />
     </worksheet>
-    <worksheet name='Sheet 10'>
+    <worksheet name='Sub-Category Highlight A'>
       <layout-options>
         <title>
           <formatted-text>
@@ -810,7 +810,7 @@
       </table>
       <simple-id uuid='{8FB8571F-B8B1-4F77-82FC-36F9314317A5}' />
     </worksheet>
-    <worksheet name='Sheet 11'>
+    <worksheet name='Sub-Category Highlight B'>
       <layout-options>
         <title>
           <formatted-text>
@@ -859,7 +859,7 @@
       </table>
       <simple-id uuid='{93946610-FEC1-4BF6-A605-A2AC9F306D15}' />
     </worksheet>
-    <worksheet name='Sheet 12'>
+    <worksheet name='Regional Profit Highlight'>
       <layout-options>
         <title>
           <formatted-text>
@@ -904,7 +904,7 @@
       </table>
       <simple-id uuid='{3B2FBB38-173F-4815-A71C-57E922B80A7E}' />
     </worksheet>
-    <worksheet name='Sheet 2'>
+    <worksheet name='KPI - Total Sales'>
       <layout-options>
         <title>
           <formatted-text>
@@ -949,7 +949,7 @@
       </table>
       <simple-id uuid='{05FF7E18-AB4A-4192-8515-FE64026CA6FA}' />
     </worksheet>
-    <worksheet name='Sheet 3'>
+    <worksheet name='KPI - Profit Margin'>
       <layout-options>
         <title>
           <formatted-text>
@@ -1004,7 +1004,7 @@
       </table>
       <simple-id uuid='{3CC72DBE-5B59-4A78-A506-D51D3AD5146A}' />
     </worksheet>
-    <worksheet name='Sheet 4'>
+    <worksheet name='KPI - Orders'>
       <layout-options>
         <title>
           <formatted-text>
@@ -1052,7 +1052,7 @@
       </table>
       <simple-id uuid='{478E517D-AD8B-41D1-BE4C-3628EA81FDFF}' />
     </worksheet>
-    <worksheet name='Sheet 5'>
+    <worksheet name='KPI - Negative Profit'>
       <layout-options>
         <title>
           <formatted-text>
@@ -1108,7 +1108,7 @@
       </table>
       <simple-id uuid='{96BD2B2A-DD9C-4DC0-9C6B-D6D6D4F382BA}' />
     </worksheet>
-    <worksheet name='Sheet 6'>
+    <worksheet name='Monthly Sales and Profit Trend'>
       <layout-options>
         <title>
           <formatted-text>
@@ -1183,7 +1183,7 @@
       </table>
       <simple-id uuid='{B72B6196-97C7-4CB6-A6B8-5E9CA9625315}' />
     </worksheet>
-    <worksheet name='Sheet 7'>
+    <worksheet name='Sales by Category'>
       <layout-options>
         <title>
           <formatted-text>
@@ -1226,7 +1226,7 @@
       </table>
       <simple-id uuid='{CC639F36-8FE0-4554-9E75-7FA89D7EB714}' />
     </worksheet>
-    <worksheet name='Sheet 8'>
+    <worksheet name='Profit by Region'>
       <layout-options>
         <title>
           <formatted-text>
@@ -1270,7 +1270,7 @@
       </table>
       <simple-id uuid='{BCB36114-577C-4BD2-B1A2-696D36679887}' />
     </worksheet>
-    <worksheet name='Sheet 9'>
+    <worksheet name='Profit by Sub-Category'>
       <layout-options>
         <title>
           <formatted-text>
@@ -1315,7 +1315,7 @@ red bar = loss making sub-categories</run>
     </worksheet>
   </worksheets>
   <dashboards>
-    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+    <dashboard enable-sort-zone-taborder='true' name='GROW - Retail Sales and Profitability Dashboard'>
       <style />
       <size maxheight='1500' maxwidth='1500' minheight='1500' minwidth='1500' sizing-mode='fixed' />
       <zones>
@@ -1341,7 +1341,7 @@ red bar = loss making sub-categories</run>
                     </zone-style>
                   </zone>
                   <zone h='6408' id='24' param='horz' type-v2='layout-flow' w='88134' x='533' y='3866'>
-                    <zone fixed-size='121' h='6408' id='25' is-fixed='true' name='Sheet 1' w='8600' x='533' y='3866'>
+                    <zone fixed-size='121' h='6408' id='25' is-fixed='true' name='KPI - Total Profit' w='8600' x='533' y='3866'>
                       <layout-cache fixed-size-h='57' type-h='fixed' type-w='fixed' />
                       <zone-style>
                         <format attr='border-color' value='#000000' />
@@ -1350,7 +1350,7 @@ red bar = loss making sub-categories</run>
                         <format attr='margin' value='4' />
                       </zone-style>
                     </zone>
-                    <zone fixed-size='147' h='6408' id='26' is-fixed='true' name='Sheet 2' w='10333' x='9133' y='3866'>
+                    <zone fixed-size='147' h='6408' id='26' is-fixed='true' name='KPI - Total Sales' w='10333' x='9133' y='3866'>
                       <layout-cache type-h='fixed' type-w='fixed' />
                       <zone-style>
                         <format attr='border-color' value='#000000' />
@@ -1359,7 +1359,7 @@ red bar = loss making sub-categories</run>
                         <format attr='margin' value='4' />
                       </zone-style>
                     </zone>
-                    <zone fixed-size='140' h='6408' id='27' is-fixed='true' name='Sheet 3' w='9866' x='19466' y='3866'>
+                    <zone fixed-size='140' h='6408' id='27' is-fixed='true' name='KPI - Profit Margin' w='9866' x='19466' y='3866'>
                       <layout-cache type-h='fixed' type-w='fixed' />
                       <zone-style>
                         <format attr='border-color' value='#000000' />
@@ -1369,7 +1369,7 @@ red bar = loss making sub-categories</run>
                       </zone-style>
                     </zone>
                   </zone>
-                  <zone h='6765' id='28' name='Sheet 4' w='41129' x='533' y='10274'>
+                  <zone h='6765' id='28' name='KPI - Orders' w='41129' x='533' y='10274'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1377,7 +1377,7 @@ red bar = loss making sub-categories</run>
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='6765' id='29' name='Sheet 5' w='47005' x='41662' y='10274'>
+                  <zone h='6765' id='29' name='KPI - Negative Profit' w='47005' x='41662' y='10274'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1385,7 +1385,7 @@ red bar = loss making sub-categories</run>
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='17325' id='30' name='Sheet 6' w='88134' x='533' y='17039'>
+                  <zone h='17325' id='30' name='Monthly Sales and Profit Trend' w='88134' x='533' y='17039'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1393,7 +1393,7 @@ red bar = loss making sub-categories</run>
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='32245' id='34' name='Sheet 7' w='21024' x='533' y='36086'>
+                  <zone h='32245' id='34' name='Sales by Category' w='21024' x='533' y='36086'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1402,7 +1402,7 @@ red bar = loss making sub-categories</run>
                     </zone-style>
                   </zone>
                   <zone h='32245' id='36' param='vert' type-v2='layout-flow' w='44169' x='44498' y='36086'>
-                    <zone h='32245' id='40' name='Sheet 9' w='44169' x='44498' y='36086'>
+                    <zone h='32245' id='40' name='Profit by Sub-Category' w='44169' x='44498' y='36086'>
                       <layout-cache fixed-size-h='484' type-h='fixed' type-w='fixed' />
                       <zone-style>
                         <format attr='border-color' value='#000000' />
@@ -1412,7 +1412,7 @@ red bar = loss making sub-categories</run>
                       </zone-style>
                     </zone>
                   </zone>
-                  <zone h='32245' id='37' name='Sheet 8' w='22941' x='21557' y='36086'>
+                  <zone h='32245' id='37' name='Profit by Region' w='22941' x='21557' y='36086'>
                     <layout-cache cell-count-w='4' minheight='200' non-cell-size-w='136' type-h='scalable' type-w='cell' />
                     <zone-style>
                       <format attr='border-color' value='#000000' />
@@ -1426,7 +1426,7 @@ red bar = loss making sub-categories</run>
             </zone>
             <zone h='67798' id='42' param='vert' type-v2='layout-flow' w='2133' x='88667' y='533' />
             <zone fixed-size='130' h='67798' id='31' is-fixed='true' param='vert' type-v2='layout-flow' w='8667' x='90800' y='533'>
-              <zone h='4800' id='33' name='Sheet 6' pane-specification-id='4' param='[federated.0j0doqo0jp4scf1f52qkl0eg9nkc].[:Measure Names]' type-v2='color' w='8667' x='90800' y='533'>
+              <zone h='4800' id='33' name='Monthly Sales and Profit Trend' pane-specification-id='4' param='[federated.0j0doqo0jp4scf1f52qkl0eg9nkc].[:Measure Names]' type-v2='color' w='8667' x='90800' y='533'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -1434,7 +1434,7 @@ red bar = loss making sub-categories</run>
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='6200' id='35' name='Sheet 7' pane-specification-id='0' param='[federated.0j0doqo0jp4scf1f52qkl0eg9nkc].[none:Category:nk]' type-v2='color' w='8667' x='90800' y='5333'>
+              <zone h='6200' id='35' name='Sales by Category' pane-specification-id='0' param='[federated.0j0doqo0jp4scf1f52qkl0eg9nkc].[none:Category:nk]' type-v2='color' w='8667' x='90800' y='5333'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -1442,7 +1442,7 @@ red bar = loss making sub-categories</run>
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='7600' id='38' name='Sheet 8' pane-specification-id='0' param='[federated.0j0doqo0jp4scf1f52qkl0eg9nkc].[none:Region:nk]' type-v2='color' w='8667' x='90800' y='11533'>
+              <zone h='7600' id='38' name='Profit by Region' pane-specification-id='0' param='[federated.0j0doqo0jp4scf1f52qkl0eg9nkc].[none:Region:nk]' type-v2='color' w='8667' x='90800' y='11533'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -1450,7 +1450,7 @@ red bar = loss making sub-categories</run>
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='25800' id='41' name='Sheet 9' pane-specification-id='0' param='[federated.0j0doqo0jp4scf1f52qkl0eg9nkc].[none:Sub-Category:nk]' type-v2='color' w='8667' x='90800' y='19133'>
+              <zone h='25800' id='41' name='Profit by Sub-Category' pane-specification-id='0' param='[federated.0j0doqo0jp4scf1f52qkl0eg9nkc].[none:Sub-Category:nk]' type-v2='color' w='8667' x='90800' y='19133'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -1464,7 +1464,7 @@ red bar = loss making sub-categories</run>
             <zone h='15602' id='43' param='horz' type-v2='layout-flow' w='98934' x='533' y='68331'>
               <zone h='15602' id='49' is-fixed='true' type-v2='layout-basic' w='98934' x='533' y='68331'>
                 <zone h='15602' id='45' param='horz' type-v2='layout-flow' w='21000' x='533' y='68331'>
-                  <zone fixed-size='346' h='15602' id='47' is-fixed='true' name='Sheet 11' w='21000' x='533' y='68331'>
+                  <zone fixed-size='346' h='15602' id='47' is-fixed='true' name='Sub-Category Highlight B' w='21000' x='533' y='68331'>
                     <layout-cache fixed-size-h='162' type-h='fixed' type-w='fixed' />
                     <zone-style>
                       <format attr='border-color' value='#000000' />
@@ -1476,7 +1476,7 @@ red bar = loss making sub-categories</run>
                 </zone>
                 <zone h='15602' id='52' is-fixed='true' type-v2='layout-basic' w='77934' x='21533' y='68331'>
                   <zone h='15602' id='50' param='horz' type-v2='layout-flow' w='22934' x='21533' y='68331'>
-                    <zone fixed-size='489' h='15602' id='44' is-fixed='true' name='Sheet 10' w='22934' x='21533' y='68331'>
+                    <zone fixed-size='489' h='15602' id='44' is-fixed='true' name='Sub-Category Highlight A' w='22934' x='21533' y='68331'>
                       <layout-cache fixed-size-h='183' type-h='fixed' type-w='fixed' />
                       <zone-style>
                         <format attr='border-color' value='#000000' />
@@ -1487,7 +1487,7 @@ red bar = loss making sub-categories</run>
                     </zone>
                   </zone>
                   <zone h='15602' id='53' param='horz' type-v2='layout-flow' w='55000' x='44467' y='68331'>
-                    <zone fixed-size='428' h='9933' id='48' is-fixed='true' name='Sheet 12' w='55000' x='44467' y='68331'>
+                    <zone fixed-size='428' h='9933' id='48' is-fixed='true' name='Regional Profit Highlight' w='55000' x='44467' y='68331'>
                       <layout-cache fixed-size-h='141' type-h='fixed' type-w='fixed' />
                       <zone-style>
                         <format attr='border-color' value='#000000' />
@@ -1525,7 +1525,7 @@ red bar = loss making sub-categories</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='88' h='6408' id='25' is-fixed='true' name='Sheet 1' w='8600' x='533' y='3866'>
+                <zone fixed-size='88' h='6408' id='25' is-fixed='true' name='KPI - Total Profit' w='8600' x='533' y='3866'>
                   <layout-cache fixed-size-h='57' type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1535,7 +1535,7 @@ red bar = loss making sub-categories</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='88' h='6408' id='26' is-fixed='true' name='Sheet 2' w='10333' x='9133' y='3866'>
+                <zone fixed-size='88' h='6408' id='26' is-fixed='true' name='KPI - Total Sales' w='10333' x='9133' y='3866'>
                   <layout-cache type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1545,7 +1545,7 @@ red bar = loss making sub-categories</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='88' h='6408' id='27' is-fixed='true' name='Sheet 3' w='9866' x='19466' y='3866'>
+                <zone fixed-size='88' h='6408' id='27' is-fixed='true' name='KPI - Profit Margin' w='9866' x='19466' y='3866'>
                   <layout-cache type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1555,7 +1555,7 @@ red bar = loss making sub-categories</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='94' h='6765' id='28' is-fixed='true' name='Sheet 4' w='41129' x='533' y='10274'>
+                <zone fixed-size='94' h='6765' id='28' is-fixed='true' name='KPI - Orders' w='41129' x='533' y='10274'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1564,7 +1564,7 @@ red bar = loss making sub-categories</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='94' h='6765' id='29' is-fixed='true' name='Sheet 5' w='47005' x='41662' y='10274'>
+                <zone fixed-size='94' h='6765' id='29' is-fixed='true' name='KPI - Negative Profit' w='47005' x='41662' y='10274'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1573,7 +1573,7 @@ red bar = loss making sub-categories</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='251' h='17325' id='30' is-fixed='true' name='Sheet 6' w='88134' x='533' y='17039'>
+                <zone fixed-size='251' h='17325' id='30' is-fixed='true' name='Monthly Sales and Profit Trend' w='88134' x='533' y='17039'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1582,7 +1582,7 @@ red bar = loss making sub-categories</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='4800' id='33' name='Sheet 6' pane-specification-id='4' param='[federated.0j0doqo0jp4scf1f52qkl0eg9nkc].[:Measure Names]' type-v2='color' w='8667' x='90800' y='533'>
+                <zone h='4800' id='33' name='Monthly Sales and Profit Trend' pane-specification-id='4' param='[federated.0j0doqo0jp4scf1f52qkl0eg9nkc].[:Measure Names]' type-v2='color' w='8667' x='90800' y='533'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1591,7 +1591,7 @@ red bar = loss making sub-categories</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='32245' id='34' is-fixed='true' name='Sheet 7' w='21024' x='533' y='36086'>
+                <zone fixed-size='280' h='32245' id='34' is-fixed='true' name='Sales by Category' w='21024' x='533' y='36086'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1600,7 +1600,7 @@ red bar = loss making sub-categories</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='6200' id='35' name='Sheet 7' pane-specification-id='0' param='[federated.0j0doqo0jp4scf1f52qkl0eg9nkc].[none:Category:nk]' type-v2='color' w='8667' x='90800' y='5333'>
+                <zone h='6200' id='35' name='Sales by Category' pane-specification-id='0' param='[federated.0j0doqo0jp4scf1f52qkl0eg9nkc].[none:Category:nk]' type-v2='color' w='8667' x='90800' y='5333'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1609,7 +1609,7 @@ red bar = loss making sub-categories</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='32245' id='37' is-fixed='true' name='Sheet 8' w='22941' x='21557' y='36086'>
+                <zone fixed-size='280' h='32245' id='37' is-fixed='true' name='Profit by Region' w='22941' x='21557' y='36086'>
                   <layout-cache cell-count-w='4' minheight='200' non-cell-size-w='136' type-h='scalable' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1619,7 +1619,7 @@ red bar = loss making sub-categories</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='7600' id='38' name='Sheet 8' pane-specification-id='0' param='[federated.0j0doqo0jp4scf1f52qkl0eg9nkc].[none:Region:nk]' type-v2='color' w='8667' x='90800' y='11533'>
+                <zone h='7600' id='38' name='Profit by Region' pane-specification-id='0' param='[federated.0j0doqo0jp4scf1f52qkl0eg9nkc].[none:Region:nk]' type-v2='color' w='8667' x='90800' y='11533'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1628,7 +1628,7 @@ red bar = loss making sub-categories</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='32245' id='40' is-fixed='true' name='Sheet 9' w='44169' x='44498' y='36086'>
+                <zone fixed-size='280' h='32245' id='40' is-fixed='true' name='Profit by Sub-Category' w='44169' x='44498' y='36086'>
                   <layout-cache fixed-size-h='484' type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1638,7 +1638,7 @@ red bar = loss making sub-categories</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='25800' id='41' name='Sheet 9' pane-specification-id='0' param='[federated.0j0doqo0jp4scf1f52qkl0eg9nkc].[none:Sub-Category:nk]' type-v2='color' w='8667' x='90800' y='19133'>
+                <zone h='25800' id='41' name='Profit by Sub-Category' pane-specification-id='0' param='[federated.0j0doqo0jp4scf1f52qkl0eg9nkc].[none:Sub-Category:nk]' type-v2='color' w='8667' x='90800' y='19133'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1647,7 +1647,7 @@ red bar = loss making sub-categories</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='226' h='15602' id='47' is-fixed='true' name='Sheet 11' w='21000' x='533' y='68331'>
+                <zone fixed-size='226' h='15602' id='47' is-fixed='true' name='Sub-Category Highlight B' w='21000' x='533' y='68331'>
                   <layout-cache fixed-size-h='162' type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1657,7 +1657,7 @@ red bar = loss making sub-categories</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='226' h='15602' id='44' is-fixed='true' name='Sheet 10' w='22934' x='21533' y='68331'>
+                <zone fixed-size='226' h='15602' id='44' is-fixed='true' name='Sub-Category Highlight A' w='22934' x='21533' y='68331'>
                   <layout-cache fixed-size-h='183' type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1667,7 +1667,7 @@ red bar = loss making sub-categories</run>
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='141' h='9933' id='48' is-fixed='true' name='Sheet 12' w='55000' x='44467' y='68331'>
+                <zone fixed-size='141' h='9933' id='48' is-fixed='true' name='Regional Profit Highlight' w='55000' x='44467' y='68331'>
                   <layout-cache fixed-size-h='141' type-h='fixed' type-w='fixed' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1692,7 +1692,7 @@ red bar = loss making sub-categories</run>
     </dashboard>
   </dashboards>
   <windows saved-dpi-scale-factor='1.25' source-height='37'>
-    <window class='worksheet' name='Sheet 1'>
+    <window class='worksheet' name='KPI - Total Profit'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1715,7 +1715,7 @@ red bar = loss making sub-categories</run>
       </cards>
       <simple-id uuid='{9D80CC12-C20D-48F0-924A-D4DFCA675A3F}' />
     </window>
-    <window class='worksheet' name='Sheet 2'>
+    <window class='worksheet' name='KPI - Total Sales'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1738,7 +1738,7 @@ red bar = loss making sub-categories</run>
       </cards>
       <simple-id uuid='{15DF0C77-0CD2-4254-B7FA-A7AEF6B2F82A}' />
     </window>
-    <window class='worksheet' name='Sheet 3'>
+    <window class='worksheet' name='KPI - Profit Margin'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1761,7 +1761,7 @@ red bar = loss making sub-categories</run>
       </cards>
       <simple-id uuid='{1C4010BE-3464-468B-9C5C-20CF601C7AFC}' />
     </window>
-    <window class='worksheet' name='Sheet 4'>
+    <window class='worksheet' name='KPI - Orders'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1784,7 +1784,7 @@ red bar = loss making sub-categories</run>
       </cards>
       <simple-id uuid='{5CD540BB-649B-4095-8D95-3E13F7843ED8}' />
     </window>
-    <window class='worksheet' name='Sheet 5'>
+    <window class='worksheet' name='KPI - Negative Profit'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1834,7 +1834,7 @@ red bar = loss making sub-categories</run>
       </viewpoint>
       <simple-id uuid='{D8FA5CE6-863E-4BBB-92C6-2F49749BA0B3}' />
     </window>
-    <window class='worksheet' name='Sheet 6'>
+    <window class='worksheet' name='Monthly Sales and Profit Trend'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1880,7 +1880,7 @@ red bar = loss making sub-categories</run>
       </viewpoint>
       <simple-id uuid='{B6A56562-C1AE-4075-9D09-9B125C0F35E1}' />
     </window>
-    <window class='worksheet' name='Sheet 7'>
+    <window class='worksheet' name='Sales by Category'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1913,7 +1913,7 @@ red bar = loss making sub-categories</run>
       </viewpoint>
       <simple-id uuid='{5BE37D6E-228A-4D8B-8864-2F15ADC0AE46}' />
     </window>
-    <window class='worksheet' name='Sheet 8'>
+    <window class='worksheet' name='Profit by Region'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1948,7 +1948,7 @@ red bar = loss making sub-categories</run>
       </viewpoint>
       <simple-id uuid='{3BD76716-CDE1-461B-98FF-ED1F6750CED0}' />
     </window>
-    <window class='worksheet' name='Sheet 9'>
+    <window class='worksheet' name='Profit by Sub-Category'>
       <cards>
         <edge name='left'>
           <strip size='268'>
@@ -1976,7 +1976,7 @@ red bar = loss making sub-categories</run>
       </cards>
       <simple-id uuid='{7C4173B6-79D1-4E4E-ACA7-DA72D2AF3FDE}' />
     </window>
-    <window class='worksheet' name='Sheet 10'>
+    <window class='worksheet' name='Sub-Category Highlight A'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2011,7 +2011,7 @@ red bar = loss making sub-categories</run>
       </viewpoint>
       <simple-id uuid='{ABC7D4E2-E211-4F1F-B51D-1F7C98D09EF0}' />
     </window>
-    <window class='worksheet' name='Sheet 11'>
+    <window class='worksheet' name='Sub-Category Highlight B'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2047,7 +2047,7 @@ red bar = loss making sub-categories</run>
       </viewpoint>
       <simple-id uuid='{9574008A-4228-44EF-8DAC-C04E0805FA46}' />
     </window>
-    <window class='worksheet' name='Sheet 12'>
+    <window class='worksheet' name='Regional Profit Highlight'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2075,31 +2075,31 @@ red bar = loss making sub-categories</run>
       </cards>
       <simple-id uuid='{5EBDCA64-6880-4F69-A545-B6C25A6DAD94}' />
     </window>
-    <window class='dashboard' maximized='true' name='Dashboard 1'>
+    <window class='dashboard' maximized='true' name='GROW - Retail Sales and Profitability Dashboard'>
       <viewpoints>
-        <viewpoint name='Sheet 1' />
-        <viewpoint name='Sheet 10' />
-        <viewpoint name='Sheet 11' />
-        <viewpoint name='Sheet 12' />
-        <viewpoint name='Sheet 2' />
-        <viewpoint name='Sheet 3' />
-        <viewpoint name='Sheet 4' />
-        <viewpoint name='Sheet 5' />
-        <viewpoint name='Sheet 6'>
+        <viewpoint name='KPI - Total Profit' />
+        <viewpoint name='Sub-Category Highlight A' />
+        <viewpoint name='Sub-Category Highlight B' />
+        <viewpoint name='Regional Profit Highlight' />
+        <viewpoint name='KPI - Total Sales' />
+        <viewpoint name='KPI - Profit Margin' />
+        <viewpoint name='KPI - Orders' />
+        <viewpoint name='KPI - Negative Profit' />
+        <viewpoint name='Monthly Sales and Profit Trend'>
           <zoom type='entire-view' />
         </viewpoint>
-        <viewpoint name='Sheet 7' />
-        <viewpoint name='Sheet 8'>
+        <viewpoint name='Sales by Category' />
+        <viewpoint name='Profit by Region'>
           <zoom type='entire-view' />
         </viewpoint>
-        <viewpoint name='Sheet 9' />
+        <viewpoint name='Profit by Sub-Category' />
       </viewpoints>
       <active id='-1' />
       <simple-id uuid='{25C90690-7722-492A-BE65-6FB9BEEF5C5E}' />
     </window>
   </windows>
   <thumbnails>
-    <thumbnail height='192' name='Dashboard 1' width='192'>
+    <thumbnail height='192' name='GROW - Retail Sales and Profitability Dashboard' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
       AAAgAElEQVR4nOy9d5he13ng97v3671/03sBZtBBkGAnRVIUJdmyVhIlxUXWukQbJ3myTp59
       sk6cxOvHu4k3iffZ5MnueleJbKtYvdMkRbATBNHbAIPp7Zuv915uyR8DDDCYGWAAonLu7w/M
@@ -2396,7 +2396,7 @@ red bar = loss making sub-categories</run>
       wwT/rOQsAIcpwFDJbT5AsjR6CHhEF9KMi05PdRaAwxQgerErJ/2M7XQX0nZt818d9srZeQSl
       nwAAAABJRU5ErkJggg==
     </thumbnail>
-    <thumbnail height='25' name='Sheet 1' width='124'>
+    <thumbnail height='25' name='KPI - Total Profit' width='124'>
       iVBORw0KGgoAAAANSUhEUgAAAHwAAAAZCAYAAADzJ0pXAAAACXBIWXMAABJ0AAASdAHeZh94
       AAAHPUlEQVRoge2abVCU1xXH//vOgssuoPIiUkHBSIlSLVapdFI/2E4yaSaTMZOJk2TatE1r
       xrTYqUbTxDoxL8Y60cZYkyZak0YzxowtGpEXFQXJUsQuoEARBZZlYRf2nX17nn2e0w87bmfd
@@ -2434,7 +2434,7 @@ red bar = loss making sub-categories</run>
       izOKsL5ow5R9LW4zpCJpIOHhcLMuuFn3pHbhfMRCMRSy1KiOldkgpmvZbCIVSad1XTE4RsDx
       PL5b8L0p+woEgqjmjnSvn2mf2eDf8bCx1NKP5NIAAAAASUVORK5CYII=
     </thumbnail>
-    <thumbnail height='129' name='Sheet 10' width='192'>
+    <thumbnail height='129' name='Sub-Category Highlight A' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAACBCAYAAACW2LXOAAAACXBIWXMAABJ0AAASdAHeZh94
       AAAgAElEQVR4nO2dd1RURxuHH6oURZQuBLtil4ixYvsQe8USNYolRhODLZYQe0FjL8QWe42o
       2LEX7NgbqCAiIIiFurBL22W/PxZWylIUiEbucw6Hc+fOvDO7e9875d53fmpyuVyOgEAJRf1z
@@ -2654,7 +2654,7 @@ red bar = loss making sub-categories</run>
       gBRJTCwSWWHV2zNU6bUxMDbIEVwvlcQQK5EphL0/RlpeQCW5qcl/qlI85K4+r8oGkGuevNqr
       o1UKwy/LAQS+Jm4G3Ofco6u4Oo35osWy/w+oYjtIDq3gxwAAAABJRU5ErkJggg==
     </thumbnail>
-    <thumbnail height='87' name='Sheet 11' width='184'>
+    <thumbnail height='87' name='Sub-Category Highlight B' width='184'>
       iVBORw0KGgoAAAANSUhEUgAAALgAAABXCAYAAAC3IY+QAAAACXBIWXMAABJ0AAASdAHeZh94
       AAAc3ElEQVR4nO2deXhTxfrHP1nbtGnpBhRQFkVFLsjSAgWlXhAqm9cFFQEBlSLIdUEUlavg
       ZRMFBJFFEFRQUBEQBEFAQIqgIiD74gVKy9LFJl2SZmm2+f2RNrRN2gbaiuZ3Ps+T52nmvPPO
@@ -2795,7 +2795,7 @@ red bar = loss making sub-categories</run>
       r9oMOty6rBFEeqm2SpSmKiHYSvM6HLgMBpDLUYSH+3yWqE2x2MqQFjxIAIErBPt/dP1kdqE2
       tvQAAAAASUVORK5CYII=
     </thumbnail>
-    <thumbnail height='108' name='Sheet 12' width='192'>
+    <thumbnail height='108' name='Regional Profit Highlight' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAABsCAYAAAA8Ar2SAAAACXBIWXMAABJ0AAASdAHeZh94
       AAAgAElEQVR4nO2deVxU1fvH3+z7joCigiiKiAviiktIiEth5m5amn4tzUxb1frqL02zstUl
       tVxTcknLxH1X1JRQFFlEFBFBQIadGWaGGeb3x8DIwIAo9C2b+369+INzn3sWuM+555x7nvMx
@@ -2971,7 +2971,7 @@ red bar = loss making sub-categories</run>
       8oslKMtVWnlWpz5i2rooFEs1wyg7K/O/2wEE/o08TULZ/w8gfsC+X684XAAAAABJRU5ErkJg
       gg==
     </thumbnail>
-    <thumbnail height='25' name='Sheet 2' width='124'>
+    <thumbnail height='25' name='KPI - Total Sales' width='124'>
       iVBORw0KGgoAAAANSUhEUgAAAHwAAAAZCAYAAADzJ0pXAAAACXBIWXMAABJ0AAASdAHeZh94
       AAAILUlEQVRoge2aa3CU1RnHf7ubzSabLNlcCEmAGkhMAOlEIZGbWqoVq6Kgo7U4Yzs6pTPo
       dKxjxzpW69gZnam1gw51rIhOW1AUkVrBWwMYjORmiJkFEiCB3Db37LKX7G728r5PP4SsrMmG
@@ -3013,7 +3013,7 @@ red bar = loss making sub-categories</run>
       6OGe66/4VmYDJOi0ZM6IPFu3Wu3MzjJRUjD+rD9RfKx6vytjW8KFiDYRAP4H3q6N7td/rG0A
       AAAASUVORK5CYII=
     </thumbnail>
-    <thumbnail height='25' name='Sheet 3' width='84'>
+    <thumbnail height='25' name='KPI - Profit Margin' width='84'>
       iVBORw0KGgoAAAANSUhEUgAAAFQAAAAZCAYAAACvrQlzAAAACXBIWXMAABJ0AAASdAHeZh94
       AAAEaUlEQVRoge2ZW2xURRjHf3PO2bOnLpcitARiaihQLkGTgg+CBkzKRWO8BIkvJGB4JCTG
       BxJ8AEOMxPigMQjGS4yQSELQIDGh2IiAkIJIKwhIlUuhWgyU0tLuds/OmTPjw+pC6VZLexYv
@@ -3038,7 +3038,7 @@ red bar = loss making sub-categories</run>
       rusbvwt/z5qC1tA7FvSuEAaYdAcIgbhndL/XHON3guVk76ADxWhMuhPhJgpyuf93Cvof5nfD
       FO7ob9OqOAAAAABJRU5ErkJggg==
     </thumbnail>
-    <thumbnail height='25' name='Sheet 4' width='64'>
+    <thumbnail height='25' name='KPI - Orders' width='64'>
       iVBORw0KGgoAAAANSUhEUgAAAEAAAAAZCAYAAACB6CjhAAAACXBIWXMAABJ0AAASdAHeZh94
       AAACHklEQVRYhe2YS2gTURSGv5tJYiEkTawtSCmKD7QYiFixUqUUYqF2oWYh1oWPpWuXddul
       7lyJK1cuBCuWWomoFKtYDEYNqdSCtRqLqLR5NDNpnYkbjZXQRKl3rtB8MJtzz5n7z8+Zy+GK
@@ -3052,7 +3052,7 @@ red bar = loss making sub-categories</run>
       wVb5Bvzkm2mSzS4ghMDn9eBw/Gq+5y+TjI3HOHf2JE6nLbNZCdt2c2oaAX/5LGCaJvHEBEd6
       wrZ/PMB3CWPQpozRuMQAAAAASUVORK5CYII=
     </thumbnail>
-    <thumbnail height='24' name='Sheet 5' width='64'>
+    <thumbnail height='24' name='KPI - Negative Profit' width='64'>
       iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAACXBIWXMAABJ0AAASdAHeZh94
       AAACx0lEQVRYhe2YS08TURiGnzMznZkWKEW5iaBAYkDiwttGMVGjQReGqInuTPxLLvwFEjcu
       TFRcGBMvxLgQIy4M3i8YKQ5tAaHTTjszx0WTGhBbLNRJpM/uzPm+nPe8+c5thJRSsolRghYQ
@@ -3069,7 +3069,7 @@ red bar = loss making sub-categories</run>
       KVKHh0CIwiCeV1j3QuBF6kD8XnhKzkHJZfHMCFIL/dWY62FDN0Hh+2jzSRb2HylOHkCqKm59
       tGSurxv4urGRctbETw+PDv44GYbxAAAAAElFTkSuQmCC
     </thumbnail>
-    <thumbnail height='192' name='Sheet 6' width='192'>
+    <thumbnail height='192' name='Monthly Sales and Profit Trend' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
       AAAgAElEQVR4nO29Z5hl11nn+9vh5BwqdYWu6pzVLXVbUkuyorGFMRhsYwwGBH6IgweGwZ4x
       dwAP9wKG5zHGM2DwXPBwAZsZG49tDJawjZGt2JK61epc1RW60qk6OYd9zg73w6kudXWfUzl0
@@ -3333,7 +3333,7 @@ red bar = loss making sub-categories</run>
       tTtRqxU03cDucCJLIqqqLjuMvaqqSJJEtVpFFgVKSg23y4miKKYBmGxtzC6QyZbGNACTLY1p
       ACZbGtMATLY0pgGYbGlMAzDZ0pgGYLKlMQ3AZEvz/wNVlJODkM6I/gAAAABJRU5ErkJggg==
     </thumbnail>
-    <thumbnail height='147' name='Sheet 7' width='192'>
+    <thumbnail height='147' name='Sales by Category' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAACTCAYAAADYxhZeAAAACXBIWXMAABJ0AAASdAHeZh94
       AAAUOklEQVR4nO3df1xUdb7H8VeO5NDIOEgooLKAaIgS4M/MH4tpeum2atrq5uqFNdvctsdq
       WuumXd3cajPcyse2t+2Hu7maq22p+COSTL1kVldT/AUIBIg5IAjywwF0PM79YwaYgRkYdZCV
@@ -3433,7 +3433,7 @@ red bar = loss making sub-categories</run>
       oWoSAKFqEgChahIAoWoSAKFqEgChahIAoWoSAKFqEgChahIAoWoSAKFqEgChahIAoWr/D8zm
       Gm2Xt5FuAAAAAElFTkSuQmCC
     </thumbnail>
-    <thumbnail height='192' name='Sheet 8' width='192'>
+    <thumbnail height='192' name='Profit by Region' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
       AAAepElEQVR4nO3daWwcaWLe8f9bR98X2bzvW6JESZREDXXM6dn1TrK7jp3Yu3Z8xU5srxEg
       gA0EAfIhQD4sHNi5FvZmHdhBssba6yT2LBLE6yNrz4xGmpGooc6RKFKieB/dPLrJvrvryIem
@@ -3582,7 +3582,7 @@ red bar = loss making sub-categories</run>
       /XUaDg3xj/7+53DLE0LSU2rPm+4P/Pgv0L+eBeCLX/wiAO5gdM/fBZKkg2jPAahp7qZGfk1e
       esbI12/J0WQAJEeTAZAc7f8BBoB5+VubSogAAAAASUVORK5CYII=
     </thumbnail>
-    <thumbnail height='192' name='Sheet 9' width='192'>
+    <thumbnail height='192' name='Profit by Sub-Category' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
       AAAgAElEQVR4nO29V4wcWbrn94uI9L5MlveOZehZbJI93T13NHdG0K4ErYEk6E0PC0GQXvQq
       P4CklXD1tNC+CdBqBQkLrfbeha5wAe3de3emh91Nz/LeV2ZlZZZNbyIy4uihiuwmmz0kyyfr
