@@ -87,7 +87,7 @@ GROW/
 │   ├── GROW_Tableau_Dashboard.twb
 │   └── README.md
 ├── GROW_Analytics_Workbook.xlsx
-├── GROW_Resume_Project_Pack.zip
+├── GROW_Retail_Sales_&_Profitability.zip
 └── grow_analysis.py
 ```
 
