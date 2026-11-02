@@ -9,9 +9,9 @@ The GROW project uses Tableau as its primary dashboard and visualization tool.
 - Calculated fields for Profit Margin, distinct Orders, and Negative Profit count
 
 ## Dataset connection
-The prepared workbook uses a relative `dataset` folder. Place `GROW_Tableau_Dashboard.twb` in the GROW project root, beside `dataset/samplesuperstore.csv`. If Tableau prompts for the source, select that CSV.
+The workbook is uploaded here as [`GROW_Tableau_Dashboard.twb`](GROW_Tableau_Dashboard.twb). Its relative connection points to `../dataset/samplesuperstore.csv`, which is stored in the GROW project folder. If Tableau prompts for the source, select `GROW/dataset/samplesuperstore.csv`.
 
 ## Validation before publishing
 The workbook's Sales and Profit formats currently use ₹, while the written sample KPI summary uses $. Confirm the intended currency and make the dashboard and project documentation consistent.
 
-The old static SVG chart gallery has been removed. The actual Tableau workbook is prepared locally but still needs to be uploaded to GitHub by the repository owner.
+The old static SVG chart gallery has been removed. The actual Tableau workbook is committed in this folder and is available from the repository.
