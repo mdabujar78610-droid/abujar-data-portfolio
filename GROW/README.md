@@ -49,7 +49,7 @@ These are descriptive results from the supplied sample file. They do not establi
 
 ## 6. Tools and Analysis
 - **Excel:** KPI summary, data-quality audit, category/region/monthly analysis, PivotTables, and charts.
-- **SQL:** reusable queries for overall KPIs, category, region, sub-category, discount, monthly trends, and data-quality checks (available in the project source pack).
+- **SQL:** seven reusable SQLite-compatible analysis sections covering overall KPIs, category, region, sub-category, discount, monthly trends, and data-quality checks. See [`sql/grow_analysis.sql`](sql/grow_analysis.sql).
 - **Python:** Pandas-based data-quality checks, KPI calculations, and category/region summaries.
 - **Tableau:** one interactive dashboard, 12 worksheets, and 3 highlight actions.
 
