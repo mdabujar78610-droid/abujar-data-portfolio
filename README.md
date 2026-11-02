@@ -18,6 +18,7 @@ Welcome to my data analytics portfolio. I am learning to turn raw data into clea
 A simulated retail analytics case study using the supplied Sample Superstore dataset. Includes data-quality checks, KPI analysis, category and regional comparisons, and a Tableau dashboard.
 - Tools: Excel, SQL, Python, and Tableau
 - [Project documentation](./GROW/README.md)
+- [Open Tableau workbook](./GROW/tableau/GROW_Tableau_Dashboard.twb)
 
 ### Users Data Report — Data Cleaning and Analysis
 A learning project exploring how messy input data can be cleaned, organized, analyzed, and presented through reports, KPIs, charts, and question-based insights.
