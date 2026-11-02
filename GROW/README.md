@@ -47,7 +47,13 @@ GROW is a simulated retail analytics case study built with the Sample Superstore
 
 These are descriptive results from the supplied sample file. They do not establish causes or represent verified results from an actual company.
 
-## 6. Tools and Analysis
+## 6. Excel Workbook
+
+[Open or download the GROW Analytics Excel Workbook](GROW_Analytics_Workbook.xlsx)
+
+The Excel workbook is included in this repository and is intended for reviewing the project’s KPI summary, data-quality checks, category/region/monthly analysis, PivotTables, and charts. Open the `.xlsx` file in Microsoft Excel or a compatible spreadsheet application.
+
+## 7. Tools and Analysis
 - **Excel:** KPI summary, data-quality audit, category/region/monthly analysis, PivotTables, and charts.
 - **SQL:** seven reusable SQLite-compatible analysis sections covering overall KPIs, category, region, sub-category, discount, monthly trends, and data-quality checks. See [`sql/grow_analysis.sql`](sql/grow_analysis.sql).
 - **Python:** Pandas-based data-quality checks, KPI calculations, and category/region summaries.
@@ -71,7 +77,7 @@ The Tableau workbook contains these 12 worksheets:
 
 The five KPI worksheets support the dashboard's headline metrics. The remaining worksheets provide time-trend, category, regional, sub-category, and highlight views. These are Tableau **worksheets**, not 12 separate automated workflows.
 
-## 7. Project Structure
+## 8. Project Structure
 ```text
 GROW/
 ├── charts/
@@ -91,10 +97,10 @@ GROW/
 └── grow_analysis.py
 ```
 
-## 8. Open the Tableau Workbook
+## 9. Open the Tableau Workbook
 The workbook is stored at [GROW_Tableau_Dashboard.twb](tableau/GROW_Tableau_Dashboard.twb). Its relative data connection points to `../dataset/samplesuperstore.csv`. Keep the `GROW/dataset` folder in place. If Tableau asks for the source file, select `GROW/dataset/samplesuperstore.csv`.
 
-## 9. Run the Python Analysis
+## 10. Run the Python Analysis
 From the repository root:
 
 ```bash
@@ -102,7 +108,7 @@ pip install pandas
 python GROW/grow_analysis.py GROW/dataset/samplesuperstore.csv
 ```
 
-## 10. Limitations and Validation Notes
+## 11. Limitations and Validation Notes
 - The dataset is sample data and is not verified real-company data.
 - Associations between discounts and profit are descriptive; they do not prove causation.
 - The dataset's 2023–2026 date range should be treated as part of the supplied sample.
