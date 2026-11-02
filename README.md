@@ -27,7 +27,7 @@ A simulated retail analytics case study using the Sample Superstore dataset. The
 - [Chart gallery](GROW/charts/)
 - [Source dataset](GROW/dataset/samplesuperstore.csv)
 - [Excel analysis workbook](GROW/GROW_Analytics_Workbook.xlsx)
-- [Project source pack](GROW/GROW_Resume_Project_Pack.zip)
+- [Project source pack](GROW/GROW_Retail_Sales_&_Profitability.zip)
 
 ### 2. Users Data Report — Data Cleaning & Analysis
 A learning project exploring a workflow for cleaning unstructured user data, producing summary KPIs and charts, and explaining findings.
