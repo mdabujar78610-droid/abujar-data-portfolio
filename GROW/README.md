@@ -51,10 +51,10 @@ These are descriptive results from the supplied sample file. They do not establi
 
 [Open or download the GROW Analytics Excel Workbook](GROW_Analytics_Workbook.xlsx)
 
-The Excel workbook is included in this repository and is intended for reviewing the project’s KPI summary, data-quality checks, category/region/monthly analysis, PivotTables, and charts. Open the `.xlsx` file in Microsoft Excel or a compatible spreadsheet application.
+The Excel workbook is included in this repository and is intended for reviewing the raw data, KPI and data-quality summaries, category/region/monthly/sub-category/discount analysis tables, and two charts on the KPI Summary sheet. Open the `.xlsx` file in Microsoft Excel or a compatible spreadsheet application. Validation found static pre-calculated values rather than refreshable PivotTables or formula-driven summaries.
 
 ## 7. Tools and Analysis
-- **Excel:** KPI summary, data-quality audit, category/region/monthly analysis, PivotTables, and charts.
+- **Excel:** raw data, pre-calculated KPI and data-quality summaries, category/region/monthly/sub-category/discount analysis tables, and two charts on the KPI Summary sheet. The workbook does not contain refreshable PivotTables or formula-driven calculations.
 - **SQL:** seven reusable SQLite-compatible analysis sections covering overall KPIs, category, region, sub-category, discount, monthly trends, and data-quality checks. See [`sql/grow_analysis.sql`](sql/grow_analysis.sql).
 - **Python:** Pandas-based data-quality checks, KPI calculations, and category/region summaries.
 - **Tableau:** one interactive dashboard, 12 worksheets, and 3 highlight actions.
@@ -98,7 +98,7 @@ GROW/
 ```
 
 ## 9. Open the Tableau Workbook
-The workbook is stored at [GROW_Tableau_Dashboard.twb](tableau/GROW_Tableau_Dashboard.twb). Its relative data connection points to `../dataset/samplesuperstore.csv`. Keep the `GROW/dataset` folder in place. If Tableau asks for the source file, select `GROW/dataset/samplesuperstore.csv`.
+The standalone workbook is stored at [GROW_Tableau_Dashboard.twb](tableau/GROW_Tableau_Dashboard.twb). Its relative data connection points to `../dataset/samplesuperstore.csv`. Keep the `GROW/dataset` folder in place. If Tableau asks for the source file, select `GROW/dataset/samplesuperstore.csv`. The current downloadable ZIP does not contain this Tableau workbook; download it separately from the link above.
 
 ## 10. Run the Python Analysis
 From the repository root:
