@@ -1,22 +1,18 @@
 """
 GROW Retail Analytics
-Run from the GROW folder:
-    python grow_analysis.py dataset/samplesuperstore.csv
+Run from the repository root:
+    python GROW/grow_analysis.py GROW/dataset/samplesuperstore.csv
 
-Requirements:
-    pip install pandas matplotlib
+Requirement:
+    pip install pandas
 
-Outputs:
-    grow_monthly_trend.png
-    grow_category_profit.png
+This script performs data-quality checks and summary analysis.
+The Tableau workbook is the project's primary dashboard.
 """
 import sys
-
-import matplotlib.pyplot as plt
 import pandas as pd
 
-
-input_file = sys.argv[1] if len(sys.argv) > 1 else "dataset/samplesuperstore.csv"
+input_file = sys.argv[1] if len(sys.argv) > 1 else "GROW/dataset/samplesuperstore.csv"
 df = pd.read_csv(input_file)
 df["Order Date"] = pd.to_datetime(df["Order Date"], errors="coerce")
 df["Ship Date"] = pd.to_datetime(df["Ship Date"], errors="coerce")
@@ -50,32 +46,4 @@ region = df.groupby("Region", as_index=False).agg(
 )
 print("\nRegion summary:\n", region.sort_values("Profit", ascending=False).to_string(index=False))
 
-# Monthly sales trend
-df["Month"] = df["Order Date"].dt.to_period("M").astype(str)
-monthly = df.groupby("Month", as_index=False).agg(
-    Sales=("Sales", "sum"), Profit=("Profit", "sum")
-)
-plt.figure(figsize=(11, 5))
-plt.plot(monthly["Month"], monthly["Sales"], marker="o", label="Sales")
-plt.xticks(rotation=90)
-plt.title("GROW: Monthly Sales Trend")
-plt.xlabel("Month")
-plt.ylabel("Sales")
-plt.tight_layout()
-plt.savefig("grow_monthly_trend.png", dpi=160)
-plt.close()
-
-# Profit by sub-category: investigate low-profit areas; do not infer causation
-subcat = df.groupby("Sub-Category", as_index=False).agg(
-    Sales=("Sales", "sum"), Profit=("Profit", "sum")
-)
-subcat = subcat.sort_values("Profit")
-plt.figure(figsize=(10, 6))
-plt.barh(subcat["Sub-Category"], subcat["Profit"])
-plt.title("GROW: Profit by Sub-Category")
-plt.xlabel("Profit")
-plt.tight_layout()
-plt.savefig("grow_category_profit.png", dpi=160)
-plt.close()
-
-print("\nCharts saved. Interpret results in context; association is not proof of causation.")
+print("\nAnalysis complete. Use the Tableau workbook for dashboard visuals.")
