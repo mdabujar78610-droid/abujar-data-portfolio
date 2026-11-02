@@ -42,7 +42,7 @@ To begin my career as a Junior Data Analyst and use data, AI, and automation to 
 ## Featured Projects
 
 ### [GROW — Retail Sales & Profitability Analysis](GROW/README.md)
-Excel, SQL, Python, and Tableau analysis. Includes KPI analysis and five separate chart visuals in [GROW/charts](GROW/charts/).
+Excel, SQL, Python, and Tableau analysis. Tableau is the primary dashboard; the project includes 12 worksheets and 3 interactive highlight actions.
 
 ### [Users Data Report](Users-Data-Report/README.md)
 Python and Google AI Studio workflow for cleaning unstructured user data, producing KPIs and charts, and explaining findings with AI-assisted Q&A. The repository currently contains the project documentation; source code and sample artifacts are still to be added.
