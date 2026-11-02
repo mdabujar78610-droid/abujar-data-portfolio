@@ -51,13 +51,13 @@ The workbook also contains **3 interactive highlight actions**. The calculated f
 - Negative Profit count: `SUM(IF [Profit] < 0 THEN 1 ELSE 0 END)`
 
 ### Data connection
-The prepared workbook uses a relative `dataset` folder and expects `samplesuperstore.csv` there. Keep the workbook in the **GROW project root**, alongside the `dataset` folder. If Tableau asks for the source, connect it to `dataset/samplesuperstore.csv`.
+The uploaded workbook is stored at [`tableau/GROW_Tableau_Dashboard.twb`](tableau/GROW_Tableau_Dashboard.twb). Its relative data connection points to `../dataset/samplesuperstore.csv`. Keep the existing `dataset` folder in place. If Tableau asks for the source, select `GROW/dataset/samplesuperstore.csv`.
 
 ### Currency validation
 The Tableau workbook formats Sales and Profit with a rupee symbol (₹), while the sample KPI calculations above are written in US dollars ($). Confirm the intended currency and make the displays consistent before publishing or using dashboard screenshots.
 
 ### Workbook availability
-The renamed Tableau workbook is prepared locally as `GROW_Tableau_Dashboard.twb`. It has not yet been uploaded to this GitHub repository. Upload that file to the GROW project root to make the actual interactive dashboard downloadable here.
+The renamed Tableau workbook is now uploaded to this repository: [`GROW_Tableau_Dashboard.twb`](tableau/GROW_Tableau_Dashboard.twb). Open it with Tableau Desktop to explore the interactive dashboard and worksheets.
 
 ## Run the Python analysis
 From the repository root:
