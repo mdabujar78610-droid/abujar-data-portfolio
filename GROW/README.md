@@ -10,7 +10,7 @@ GROW is a retail analytics case study using the Sample Superstore dataset. It ex
 ## Tableau Dashboard
 ![GROW Tableau dashboard](dashboard/grow_dashboard.png)
 
-[Dashboard preview](dashboard/grow_dashboard.png) · [Editable Tableau workbook](tableau/GROW_Tableau_Dashboard.twb)
+[Dashboard preview](dashboard/grow_dashboard.png) · [Editable Tableau workbook](tableau/grow_retail_sales_dashboard.twb)
 
 ## Chart Gallery
 ### Sales by Category
@@ -67,19 +67,19 @@ The SQL file is written for SQLite and expects a table named `superstore`.
 For example, with DB Browser for SQLite: create/open a database, use **File → Import → Table from CSV**, select the dataset, and set the table name to `superstore`.
 
 ## Open the Tableau workbook
-1. Open [tableau/GROW_Tableau_Dashboard.twb](tableau/GROW_Tableau_Dashboard.twb) in Tableau Desktop.
+1. Open [tableau/grow_retail_sales_dashboard.twb](tableau/grow_retail_sales_dashboard.twb) in Tableau Desktop.
 2. If prompted, reconnect the data source to `dataset/samplesuperstore.csv`.
 3. Refresh the data and verify that the worksheets, filters, and dashboard load correctly.
 
 See [the Tableau-specific guide](tableau/README.md) for workbook details.
 
 ## Project files
-- [Excel workbook](GROW_Analytics_Workbook.xlsx)
+- [Excel workbook](grow_analytics_workbook.xlsx)
 - [Python analysis](grow_analysis.py)
 - [Python requirements](requirements.txt)
 - [SQL analysis](sql/grow_analysis.sql)
 - [Sample dataset](dataset/samplesuperstore.csv)
-- [Tableau workbook](tableau/GROW_Tableau_Dashboard.twb)
+- [Tableau workbook](tableau/grow_retail_sales_dashboard.twb)
 
 ## Notes
 - Sales and Profit are reported in USD ($) in this project summary; keep workbook number formats consistent.
