@@ -11,7 +11,7 @@ This folder contains the editable Tableau workbook for the GROW retail analytics
 - Calculated fields for profit margin, distinct orders, and negative-profit count
 
 ## Open the workbook
-1. Download `GROW_Tableau_Dashboard.twb` from this folder.
+1. Download `grow_retail_sales_dashboard.twb` from this folder.
 2. Keep the project dataset at `GROW/dataset/samplesuperstore.csv`.
 3. Open the workbook in Tableau Desktop.
 4. If Tableau asks for the data source, reconnect it to `GROW/dataset/samplesuperstore.csv`.
@@ -21,7 +21,7 @@ This folder contains the editable Tableau workbook for the GROW retail analytics
 The project README reports Sales and Profit in USD ($). Keep the Tableau number formats and KPI values consistent with that reporting convention. Check the workbook's data-source locale/currency defaults as well as worksheet-level number formatting; changing only a displayed label may not update the underlying defaults.
 
 ## Files
-- [Editable Tableau workbook](GROW_Tableau_Dashboard.twb)
+- [Editable Tableau workbook](grow_retail_sales_dashboard.twb)
 - [Dashboard preview](../dashboard/grow_dashboard.png)
 - [Chart gallery](../charts/)
 
