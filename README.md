@@ -21,6 +21,7 @@ Aspiring Junior Data Analyst building practical projects in data preparation, an
 Sample-data retail analytics case study using Sample Superstore. Includes Excel, SQL, Python, Tableau, four chart previews, and a dashboard.
 - [Project overview and chart gallery](GROW/README.md)
 - [Dashboard preview](GROW/dashboard/grow_dashboard.png)
+- [Four-chart gallery](GROW/charts/)
 - [Tableau workbook](GROW/tableau/GROW_Tableau_Dashboard.twb)
 - [Excel workbook](GROW/GROW_Analytics_Workbook.xlsx)
 - [SQL analysis](GROW/sql/grow_analysis.sql)
