@@ -26,6 +26,7 @@ Sample-data retail analytics case study using Sample Superstore. Includes Excel,
 - [Excel workbook](GROW/GROW_Analytics_Workbook.xlsx)
 - [SQL analysis](GROW/sql/grow_analysis.sql)
 - [Python analysis](GROW/grow_analysis.py)
+- [Python dependencies](GROW/requirements.txt)
 - [Sample dataset](GROW/dataset/samplesuperstore.csv)
 
 ### Users Data Report — Data Cleaning & Analysis
