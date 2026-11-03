@@ -1,35 +1,31 @@
 # GROW — Retail Sales & Profitability Analysis
 
-**Data analytics portfolio case study** · Excel · SQL · Python · Tableau
+**Portfolio case study** · Excel · SQL · Python · Tableau
 
-## Project Overview
-
+## Overview
 GROW is a retail analytics case study using the Sample Superstore dataset. It explores sales, profit, profit margin, category and regional performance, sub-category profitability, monthly trends, and data quality.
 
-> **Dataset disclosure:** This is sample data, not verified records from a real company. Findings describe only the supplied dataset.
+> **Dataset disclosure:** Sample Superstore is sample/learning data, not verified company records. Findings describe only this dataset.
 
 ## Tableau Dashboard
-
 ![GROW Tableau dashboard](dashbord_page_1.png)
 
-[Open the dashboard image](dashbord_page_1.png) · [Open the Tableau workbook](tableau/GROW_Tableau_Dashboard.twb)
+[Dashboard preview](dashbord_page_1.png) · [Editable Tableau workbook](tableau/GROW_Tableau_Dashboard.twb)
 
 ## Chart Gallery
-
 ### Sales by Category
 ![Sales by Category](sc2_page_1.png)
-
-### Profit by Region
-![Profit by Region](p1_page_1.png)
 
 ### Profit by Sub-Category
 ![Profit by Sub-Category](pc1_page_1.png)
 
-### Monthly Sales and Profit Trend
+### Profit by Region
+![Profit by Region](p1_page_1.png)
+
+### Monthly Sales & Profit Trend
 ![Monthly Sales and Profit Trend](monthly%20sales%20%26%20profit%20trend_page_1.png)
 
 ## Key Performance Indicators
-
 | Metric | Result |
 |---|---:|
 | Total Sales | $2,326,534.35 |
@@ -40,64 +36,27 @@ GROW is a retail analytics case study using the Sample Superstore dataset. It ex
 | Negative-Profit Line Items | 1,901 |
 
 ## Key Findings
-
 - Technology has the highest sales among the three categories.
-- Tables are the lowest-profit sub-category and show a negative total profit.
+- Tables is the lowest-profit sub-category and has a negative total profit.
 - The West region records the highest profit among the four regions.
-- The monthly view shows sales and profit movement across the supplied date range.
 
-These are descriptive findings; they do not establish causation or represent verified company results.
-
-## Tools and Workflow
-
-- **Excel:** KPI summaries, data-quality review, analysis tables, and charts.
-- **SQL:** queries for overall KPIs, category, region, sub-category, discount, monthly trends, and data-quality checks.
-- **Python:** data cleaning checks, KPI calculations, and summary analysis with Pandas.
-- **Tableau:** interactive dashboard and worksheet-based visual analysis.
+## Tools
+- **Excel:** KPI summaries, formulas, analysis tables, and charts.
+- **SQL:** KPI, category, regional, sub-category, discount, monthly, and data-quality queries.
+- **Python:** data preparation, checks, and KPI analysis with Pandas.
+- **Tableau:** worksheets and dashboard for visual analysis.
 
 ## Project Files
+- [Excel workbook](GROW_Analytics_Workbook.xlsx)
+- [Python analysis](grow_analysis.py)
+- [SQL analysis](sql/grow_analysis.sql)
+- [Sample dataset](dataset/samplesuperstore.csv)
+- [Tableau workbook](tableau/GROW_Tableau_Dashboard.twb)
 
-| Resource | Link |
-|---|---|
-| Excel analysis workbook | [GROW Analytics Workbook](GROW_Analytics_Workbook.xlsx) |
-| Python analysis | [grow_analysis.py](grow_analysis.py) |
-| SQL analysis | [SQL folder](sql/) |
-| Dataset | [Dataset folder](dataset/) |
-| Tableau workbook | [GROW Tableau Dashboard](tableau/GROW_Tableau_Dashboard.twb) |
-
-## Repository Layout
-
-The newly uploaded chart and dashboard previews are currently stored in the GROW project root. The links above point to their current committed locations. The Tableau workbook is stored in `tableau/`. The preview files still need to be moved into dedicated `charts/` and `dashboard/` folders to complete the requested folder structure.
-
-```text
-GROW/
-├── charts/                 # destination for the four chart previews
-├── dashboard/              # destination for the dashboard preview
-├── dataset/
-├── sql/
-├── tableau/
-│   └── GROW_Tableau_Dashboard.twb
-├── GROW_Analytics_Workbook.xlsx
-├── grow_analysis.py
-└── README.md
-```
-
-## Running the Python Analysis
-
-From the repository root:
-
-```bash
-pip install pandas
-python GROW/grow_analysis.py GROW/dataset/samplesuperstore.csv
-```
-
-## Notes and Limitations
-
-- The dataset is sample data and must not be presented as verified company data.
-- Sales and Profit are displayed in USD ($) in the supplied Tableau visuals.
-- Discount/profit relationships are descriptive and do not establish causation.
-- PNG files are static previews; the `.twb` file is the editable Tableau workbook.
+## Notes
+- Sales and Profit in the Tableau visuals are shown in USD ($).
+- PNGs are static previews; the TWB file is the editable Tableau workbook.
+- Findings are descriptive and must not be presented as verified company performance.
 
 ---
-
 *Portfolio project by Mohammad Abuzar.*
