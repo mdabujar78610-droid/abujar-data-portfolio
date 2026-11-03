@@ -8,22 +8,22 @@ GROW is a retail analytics case study using the Sample Superstore dataset. It ex
 > **Dataset disclosure:** Sample Superstore is sample/learning data, not verified company records. Findings describe only this dataset.
 
 ## Tableau Dashboard
-![GROW Tableau dashboard](dashbord_page_1.png)
+![GROW Tableau dashboard](dashboard/grow_dashboard.png)
 
-[Dashboard preview](dashbord_page_1.png) · [Editable Tableau workbook](tableau/GROW_Tableau_Dashboard.twb)
+[Dashboard preview](dashboard/grow_dashboard.png) · [Editable Tableau workbook](tableau/GROW_Tableau_Dashboard.twb)
 
 ## Chart Gallery
 ### Sales by Category
-![Sales by Category](sc2_page_1.png)
+![Sales by Category](charts/sales_by_category.png)
 
 ### Profit by Sub-Category
-![Profit by Sub-Category](pc1_page_1.png)
+![Profit by Sub-Category](charts/profit_by_sub_category.png)
 
 ### Profit by Region
-![Profit by Region](p1_page_1.png)
+![Profit by Region](charts/profit_by_region.png)
 
 ### Monthly Sales & Profit Trend
-![Monthly Sales and Profit Trend](monthly%20sales%20%26%20profit%20trend_page_1.png)
+![Monthly Sales and Profit Trend](charts/monthly_sales_profit_trend.png)
 
 ## Key Performance Indicators
 | Metric | Result |
