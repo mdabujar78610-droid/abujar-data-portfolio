@@ -1,4 +1,4 @@
-# Mohammad Ajuzar | Data Analytics Portfolio
+# Mohammad Abujar | Data Analytics Portfolio
 
 Aspiring Junior Data Analyst building practical projects in data preparation, analysis, visualization, and business communication.
 
